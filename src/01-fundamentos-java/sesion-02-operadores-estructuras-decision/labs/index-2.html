@@ -1,0 +1,613 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desconocido </title></head><body>
+<h1 id="laboratorios-de-la-sesion-2">Laboratorios de la sesión 2</h1>
+<p>Dispones de <strong>80 minutos para cinco actividades y 10 para pruebas cruzadas y cierre</strong>. Completa los TODO en tu repositorio personal. Usa JDK 21 como referencia; el código también es compatible con Java 17. Trabaja con datos inicializados y ejecuciones manuales, sin Scanner, ciclos, métodos auxiliares, dependencias ni excepciones.</p>
+<p>Cada clase inicial compila, pero contiene tareas pendientes. Primero predice, después implementa y finalmente compara. No publiques solo capturas: registra entradas y resultados en tu README personal.</p>
+<h2 id="antes-de-escribir-codigo">Antes de escribir código</h2>
+<ol>
+<li>Trabaja en tu copia personal y abre la clase indicada en cada lab. No edites ni resuelvas las actividades en el repositorio oficial.</li>
+<li>Escribe dentro de <code>public static void main(String[] args)</code>, entre sus llaves. Conserva el nombre del archivo y el de la clase; no crees otro main.</li>
+<li>Un <code>// TODO</code> es una tarea comentada. Escribe la instrucción Java en una línea nueva sin <code>//</code>; una instrucción comentada no se ejecuta. Cuando termines, puedes quitar el TODO o marcarlo como completado.</li>
+<li>Usa <code>System.out.println</code> con esa escritura exacta y punto y coma al final. Texto entre comillas dobles; variables fuera de las comillas. Por ejemplo: <code>System.out.println("Cantidad: " + cantidad);</code> requiere que cantidad ya esté declarada e inicializada.</li>
+<li>Al usar Run, elige la clase del lab actual. Si ejecutas otra clase, verás su salida aunque acabes de editar este archivo.</li>
+<li>Compara solo la salida de tu programa, no mensajes del IDE como el comando de ejecución o <code>Process finished with exit code 0</code>.</li>
+<li>Salvo que se indique lo contrario, usa las etiquetas y el orden del bloque esperado. Los ejemplos de salida usan textos sin tildes para que la comparación sea directa. No agregues encabezados, resultados de pruebas anteriores ni mensajes de depuración a la versión final.</li>
+<li>Para probar otro caso, cambia los valores iniciales y ejecuta otra vez. Guarda cada resultado en tu README personal; no necesitas crear otras clases ni automatizar las pruebas.</li>
+</ol>
+<h2 id="registro-de-comprobaciones">Registro de comprobaciones</h2>
+<p>En el README de tu repositorio personal, crea una sección por lab. Para cada ejecución anota: datos usados, resultado que esperabas, resultado observado y si coincidió. Incluye las respuestas breves solicitadas. No hace falta una captura de pantalla por prueba ni un documento Word.</p>
+<p>Los bloques de salida son una referencia para comparar, no código Java que debas pegar dentro de main.</p>
+<h2 id="lab-1-calcula-y-predice-10-minutos">Lab 1 · Calcula y predice · 10 minutos</h2>
+<h3 id="pasos-para-completar-la-actividad">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>S02Lab01CalculaYPredice.java</code>. Mantén las tres variables iniciales: unidades=7, capacidad=2 y contador=3. Escribe las nuevas instrucciones dentro de main, debajo de los TODO.</li>
+<li>Antes de programar, copia la tabla siguiente a tu README personal y llena la columna <strong>Mi predicción</strong> con tus cálculos. No imprimas las predicciones en la consola del programa.</li>
+<li>Declara variables para los primeros seis resultados: suma, resta, producto, divisionEntera, divisionDecimal y resto. Usa int para todos excepto divisionDecimal, que debe ser double. Calcula usando las expresiones de la tabla; no asignes directamente los resultados 9, 5, 14, etc.</li>
+<li>Agrega un <code>System.out.println</code> por cada resultado, en el orden de la tabla. Escribe la etiqueta entre comillas, luego <code>+</code> y la variable. Ejemplo para otro dato: <code>System.out.println("Cantidad: " + cantidad);</code>.</li>
+<li>Para las filas de precedencia, imprime las expresiones <code>2 + 3 * 4</code> y <code>(2 + 3) * 4</code> con sus respectivas etiquetas. Cuando concatenes una expresión numérica directamente, enciérrala entre paréntesis: <code>"Etiqueta: " + (expresion)</code>. Así se calcula antes de unirla al texto.</li>
+<li>Incrementa contador usando <code>contador++;</code> como instrucción separada y después imprime su valor con <code>Contador incrementado:</code>. Luego usa <code>contador--;</code> y muestra <code>Contador decrementado:</code>. No incrementes dentro del println en esta actividad.</li>
+<li>Ejecuta Run sobre esta clase. Compara las diez líneas con el bloque esperado y llena <strong>Resultado observado</strong> en tu tabla. Si no coinciden, revisa la expresión; no cambies la salida esperada para ajustarla a un error.</li>
+<li>Cambia únicamente unidades de 7 a 8 y vuelve a ejecutar. Verifica suma=10, resta=6, producto=16, divisionEntera=4 y resto=0. La división decimal sigue siendo 3.5 porque la expresión solicitada conserva el literal 7.0.</li>
+<li>Guarda las dos salidas y responde en tu README: ¿por qué 7/2 no produce 3.5? ¿Qué representa %? ¿Cómo cambian el orden los paréntesis?</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Resultado</th>
+<th>Expresión que debes calcular</th>
+<th>Etiqueta del println</th>
+<th>Mi predicción</th>
+<th>Resultado observado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>suma</td>
+<td><code>unidades + capacidad</code></td>
+<td><code>Suma:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>resta</td>
+<td><code>unidades - capacidad</code></td>
+<td><code>Resta:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>producto</td>
+<td><code>unidades * capacidad</code></td>
+<td><code>Producto:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>divisionEntera</td>
+<td><code>unidades / capacidad</code></td>
+<td><code>Division entera:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>divisionDecimal</td>
+<td><code>7.0 / capacidad</code></td>
+<td><code>Division decimal:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>resto</td>
+<td><code>unidades % capacidad</code></td>
+<td><code>Resto:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>Primera precedencia</td>
+<td><code>2 + 3 * 4</code></td>
+<td><code>Sin parentesis:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>Segunda precedencia</td>
+<td><code>(2 + 3) * 4</code></td>
+<td><code>Con parentesis:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>Primer cambio</td>
+<td>Valor de contador después de <code>contador++</code></td>
+<td><code>Contador incrementado:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+<tr>
+<td>Segundo cambio</td>
+<td>Valor de contador después de <code>contador--</code></td>
+<td><code>Contador decrementado:</code></td>
+<td>Completar</td>
+<td>Completar</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Terminado cuando:</strong> el caso inicial produce diez líneas, cada resultado viene de un cálculo y registraste las dos ejecuciones. No escribas <code>println("Suma: 9")</code>: eso muestra un resultado fijo, no demuestra el uso de operadores.</p>
+<p><strong>Archivo:</strong> <a href="S02Lab01CalculaYPredice.java">S02Lab01CalculaYPredice.java</a>.</p>
+<p>Con unidades=7, capacidad=2 y contador=3, completa las expresiones y muestra:</p>
+<p><code>text
+Suma: 9
+Resta: 5
+Producto: 14
+Division entera: 3
+Division decimal: 3.5
+Resto: 1
+Sin parentesis: 14
+Con parentesis: 20
+Contador incrementado: 4
+Contador decrementado: 3</code></p>
+<p>La división decimal de este ejercicio es <code>7.0 / capacidad</code>. Prueba luego unidades=8, manteniendo las demás entradas. Cambian suma, resta, producto, división entera y resto; la división decimal conserva el numerador literal 7.0. Explica esa diferencia y por qué % no calcula un porcentaje. Registra tu predicción antes de ejecutar.</p>
+<h2 id="lab-2-reglas-de-acceso-15-minutos">Lab 2 · Reglas de acceso · 15 minutos</h2>
+<h3 id="pasos-para-completar-la-actividad_1">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>S02Lab02ReglasDeAcceso.java</code> y conserva los cuatro datos iniciales. No agregues lectura por teclado.</li>
+<li>Escribe un comentario con la regla completa: ser mayor de edad, tener al menos una autorización y no estar bloqueado.</li>
+<li>Declara <code>boolean puedeEntrar</code>. Construye su expresión con tres requisitos: edad al menos 18; membresía o invitación; ausencia de bloqueo. Usa &amp;&amp; para exigir requisitos simultáneos, || para las dos autorizaciones alternativas y ! para negar bloqueado. Agrupa las autorizaciones entre paréntesis.</li>
+<li>Escribe un if cuya condición sea puedeEntrar. En la rama verdadera agrega un println con <code>Acceso permitido</code>; en else agrega uno con <code>Acceso denegado</code>. No imprimas ambos mensajes fuera del if.</li>
+<li>Ejecuta con los datos iniciales: edad=18, miembro=false, invitación=true, bloqueo=false. Debe aparecer una sola línea: <code>Acceso permitido</code>.</li>
+<li>Prueba una por una las filas de las tablas. Cambia las variables iniciales, ejecuta y registra cada resultado; no agregues un ciclo. Restablece las cuatro entradas para cada fila, sin arrastrar cambios del caso anterior.</li>
+<li>Coloca un breakpoint en if, ejecuta Debug y observa puedeEntrar. Usa Step Over para comprobar qué rama se selecciona.</li>
+<li>Explica en tu README qué agrupación evita permitir acceso a un menor con invitación y por qué un bloqueo niega siempre el acceso.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> cada ejecución muestra solo uno de los dos mensajes y tus pruebas incluyen la frontera de edad y las ocho combinaciones booleanas para edad 18.</p>
+<p><strong>Archivo:</strong> <a href="S02Lab02ReglasDeAcceso.java">S02Lab02ReglasDeAcceso.java</a>.</p>
+<p>Regla: permitir acceso cuando edad &gt;= 18, exista membresía o invitación y no haya bloqueo. Construye un boolean con nombre claro y usa if/else para mostrar exactamente <code>Acceso permitido</code> o <code>Acceso denegado</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Edad</th>
+<th>Miembro</th>
+<th>Invitación</th>
+<th>Bloqueado</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>Denegado</td>
+</tr>
+<tr>
+<td>18</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>Permitido</td>
+</tr>
+<tr>
+<td>19</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>Permitido</td>
+</tr>
+<tr>
+<td>18</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>Denegado</td>
+</tr>
+<tr>
+<td>18</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>Denegado</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ocho-combinaciones-con-edad-18">Ocho combinaciones con edad 18</h3>
+<p>Haz una ejecución por fila; las columnas indican exactamente qué valores asignar a las variables.</p>
+<table>
+<thead>
+<tr>
+<th>esMiembro</th>
+<th>tieneInvitacion</th>
+<th>bloqueado</th>
+<th>Mensaje esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>Acceso denegado</td>
+</tr>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>true</td>
+<td>Acceso denegado</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>Acceso permitido</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+<td>Acceso denegado</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>Acceso permitido</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+<td>Acceso denegado</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>Acceso permitido</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>Acceso denegado</td>
+</tr>
+</tbody>
+</table>
+<p>Registra las ocho combinaciones de miembro, invitación y bloqueo para edad 18. Explica dónde necesitas AND, OR y NOT. Un bloqueo debe negar el acceso aunque los demás requisitos se cumplan. Observa el boolean con Debug antes de seleccionar la rama.</p>
+<h2 id="lab-3-clasifica-resultados-15-minutos">Lab 3 · Clasifica resultados · 15 minutos</h2>
+<h3 id="pasos-para-completar-la-actividad_2">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>S02Lab03ClasificaResultados.java</code> y deja nota=85 para la primera prueba.</li>
+<li>Escribe la primera condición para detectar nota menor que 0 O mayor que 100. Si es verdadera, usa println para mostrar únicamente <code>Nota invalida</code>.</li>
+<li>Continúa esa misma cadena con else if: primero comprueba el rango A, luego B, C y D; reserva el else final para E. No uses cinco if independientes, porque podrían imprimir varias categorías para una misma nota.</li>
+<li>Dentro de cada rama válida escribe un único println con <code>Categoria A</code>, <code>Categoria B</code>, <code>Categoria C</code>, <code>Categoria D</code> o <code>Categoria E</code>, según corresponda. No agregues el valor de nota ni encabezados a la salida requerida.</li>
+<li>Ejecuta con 85 y comprueba que aparece una única línea: <code>Categoria B</code>.</li>
+<li>Cambia nota por cada número de la tabla, de uno en uno. Aunque una fila tenga dos valores, debes hacer una ejecución por valor; son doce pruebas adicionales. Registra nota, resultado esperado y resultado observado.</li>
+<li>Explica qué pasaría con nota=95 si el primer rango válido fuera &gt;=60. No necesitas conservar una versión incorrecta del código.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> tanto las notas inválidas como las válidas muestran exactamente una línea y se comprobaron todas las fronteras de la tabla.</p>
+<p><strong>Archivo:</strong> <a href="S02Lab03ClasificaResultados.java">S02Lab03ClasificaResultados.java</a>.</p>
+<p>La nota es un entero de 0 a 100. Antes de clasificar, rechaza valores fuera del rango. Usa una cadena if/else if/else con A desde 90, B desde 80, C desde 70, D desde 60 y E por debajo de 60. Muestra <code>Categoria A</code>, <code>Categoria B</code>, etc., o solo <code>Nota invalida</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Notas</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1, 101</td>
+<td>Nota invalida</td>
+</tr>
+<tr>
+<td>0, 59</td>
+<td>Categoria E</td>
+</tr>
+<tr>
+<td>60, 69</td>
+<td>Categoria D</td>
+</tr>
+<tr>
+<td>70, 79</td>
+<td>Categoria C</td>
+</tr>
+<tr>
+<td>80, 89</td>
+<td>Categoria B</td>
+</tr>
+<tr>
+<td>90, 100</td>
+<td>Categoria A</td>
+</tr>
+</tbody>
+</table>
+<p>Con nota=85 se espera <code>Categoria B</code>. Prueba cada valor de la tabla. Explica qué ocurriría si comprobaras nota&gt;=60 antes de nota&gt;=90 sin cambiar las demás ramas. Estas categorías pertenecen al ejercicio; no representan una escala institucional de calificación.</p>
+<h2 id="lab-4-elige-la-entrega-15-minutos">Lab 4 · Elige la entrega · 15 minutos</h2>
+<h3 id="pasos-para-completar-la-actividad_3">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>S02Lab04EligeLaEntrega.java</code>. Comienza con tipoEntrega="EXPRESS". Es un texto fijo, no un dato que debas solicitar por teclado.</li>
+<li>Declara un long llamado costoCentavos y determina su valor con switch según la tabla. Para default usa -1 como señal interna de opción desconocida.</li>
+<li>Si usas switch clásico, asigna costoCentavos en cada case y añade break. Si usas switch como expresión con flechas, asigna el valor que devuelve a costoCentavos y no añadas break.</li>
+<li>Después del switch, usa if para comprobar si costoCentavos es negativo. En ese caso imprime solo <code>Tipo de entrega invalido</code>.</li>
+<li>En el else de opción válida declara un String llamado etiqueta. Asígnalo con un ternario: si el contenido de tipoEntrega es RECOGIDA, elegir <code>Retiro en tienda</code>; en caso contrario, <code>Entrega a domicilio</code>. Compara contenido con equals, no con ==.</li>
+<li>En esa misma rama válida agrega dos println: uno con <code>Costo (centavos):</code> y costoCentavos; otro con <code>Etiqueta:</code> y etiqueta. No imprimas el costo -1 ni una etiqueta para la opción inválida.</li>
+<li>Ejecuta cuatro veces cambiando tipoEntrega por ESTANDAR, EXPRESS, RECOGIDA y DRON. Registra las dos líneas de cada opción válida y la única línea de la inválida.</li>
+<li>En tu copia personal reemplaza temporalmente una forma de switch por la otra y repite las cuatro pruebas. Guarda una sola forma en la clase final y explica qué hace break y qué cambia con las flechas.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> las tres modalidades válidas muestran costo y etiqueta; DRON muestra solo el error, y puedes explicar las dos formas de switch.</p>
+<p><strong>Archivo:</strong> <a href="S02Lab04EligeLaEntrega.java">S02Lab04EligeLaEntrega.java</a>.</p>
+<p>El texto tipoEntrega debe ser no null y estar en mayúsculas. Usa switch y default para resolver:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Costo en centavos</th>
+<th>Etiqueta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESTANDAR</td>
+<td>500</td>
+<td>Entrega a domicilio</td>
+</tr>
+<tr>
+<td>EXPRESS</td>
+<td>1200</td>
+<td>Entrega a domicilio</td>
+</tr>
+<tr>
+<td>RECOGIDA</td>
+<td>0</td>
+<td>Retiro en tienda</td>
+</tr>
+<tr>
+<td>DRON o cualquier otro texto</td>
+<td>No válido</td>
+<td>No mostrar etiqueta</td>
+</tr>
+</tbody>
+</table>
+<p>En una opción válida, muestra dos líneas. Para EXPRESS:</p>
+<p><code>text
+Costo (centavos): 1200
+Etiqueta: Entrega a domicilio</code></p>
+<p>Elige la etiqueta mediante un ternario simple y compara contenido de texto con equals. En una opción desconocida muestra únicamente <code>Tipo de entrega invalido</code>. Puedes usar -1 como señal interna; no lo muestres como costo válido.</p>
+<p>Compara la forma clásica con la forma de flecha en tu copia personal y prueba que ambas producen los mismos resultados. Entrega una sola versión y explica qué evita break y por qué las flechas no lo necesitan.</p>
+<h2 id="lab-5-motor-de-promociones-25-minutos">Lab 5 · Motor de promociones · 25 minutos</h2>
+<h3 id="pasos-para-completar-la-actividad_4">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>S02Lab05MotorPromociones.java</code> y conserva las cuatro entradas iniciales. Calcula en tu README el descuento, neto, envío y total esperado antes de escribir las decisiones.</li>
+<li>Crea un boolean llamado datosValidos que sea verdadero únicamente si subtotalCentavos está entre 0 y 1_000_000 inclusive y cantidad es mayor que 0. La cantidad sirve para validar; no multipliques otra vez el subtotal por ella.</li>
+<li>Escribe if/else para separar datos inválidos de válidos. En la rama inválida imprime solo <code>Pedido invalido: subtotal o cantidad fuera de rango</code>. Escribe todos los pasos siguientes dentro de la rama de datos válidos para que no se calculen pedidos rechazados.</li>
+<li>Dentro de esa rama, calcula envioCentavos como long mediante switch de tipoEntrega: ESTANDAR=500, EXPRESS=1200, RECOGIDA=0 y default=-1.</li>
+<li>Separa de nuevo con if/else: si envioCentavos es negativo, imprime solo <code>Pedido invalido: tipo de entrega desconocido</code>; en su else continúa con el cálculo de promociones. No añadas throw ni excepciones.</li>
+<li>Declara un int porcentajeDescuento. Asígnale 10 si es miembro y subtotalCentavos&gt;=10_000; 5 si no es miembro y subtotalCentavos&gt;=20_000; 0 en los demás casos. Usa una cadena if/else if/else, sin sumar porcentajes.</li>
+<li>Declara long descuentoCentavos y calcúlalo como <code>subtotalCentavos * porcentajeDescuento / 100</code>. No uses 0.10 o 0.05: porcentajeDescuento almacena el entero 10 o 5. La división entera descarta fracciones de centavo, como exige el ejercicio.</li>
+<li>Declara long netoCentavos y réstale descuentoCentavos al subtotal.</li>
+<li>Crea un boolean envioGratis que exija simultáneamente entrega ESTANDAR y netoCentavos&gt;=25_000. Compara el texto con equals. Si se cumple, reasigna envioCentavos a 0. No apliques esta gratuidad a EXPRESS.</li>
+<li>Declara long totalCentavos y súmale envioCentavos al neto. No vuelvas a restar el descuento.</li>
+<li>Agrega seis println, solo en la rama de pedido válido, con las etiquetas exactas del bloque esperado: Subtotal (centavos), Descuento (%), Descuento (centavos), Neto (centavos), Envio (centavos) y Total (centavos). Cada etiqueta lleva <code>:</code> y se concatena con su variable.</li>
+<li>Ejecuta el caso inicial y compara sus seis líneas. Si falla, revisa en orden porcentaje, descuento, neto, envío y total para localizar la primera diferencia.</li>
+<li>Prueba una fila de la matriz por ejecución. La primera fila usa cantidad=4; las demás, cantidad=1. Cambia también esMiembro y tipoEntrega según cada fila. Registra las entradas y las seis salidas sin cambiar las fórmulas.</li>
+<li>Haz las cinco pruebas inválidas indicadas abajo, restaurando antes de cada una el caso inicial válido. Comprueba una sola línea de error y ninguna línea de desglose ni total.</li>
+<li>En Debug, coloca un breakpoint en la condición que decide el envío gratis. Observa netoCentavos antes de evaluarla y envioCentavos después. Compara los casos 26314 y 26315, ambos no miembros y ESTANDAR.</li>
+<li>En tu README personal explica por qué se prueba el neto, por qué el envío EXPRESS sigue cobrando y cómo se descartan fracciones de centavo. Revisa nombres y repite una prueba después de cualquier cambio.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> las entradas válidas muestran seis líneas correctas, cada entrada inválida muestra solo su mensaje y probaste ambos lados de las fronteras. No imprimas los resultados como textos fijos: cada importe debe provenir de las variables calculadas.</p>
+<p><strong>Archivo:</strong> <a href="S02Lab05MotorPromociones.java">S02Lab05MotorPromociones.java</a>.</p>
+<p>Integra operadores y decisiones en un pedido. Entradas: subtotalCentavos como long, cantidad como int, esMiembro como boolean y tipoEntrega como String no null. Todo importe se muestra en centavos.</p>
+<h3 id="reglas">Reglas</h3>
+<ol>
+<li>Rechaza subtotal menor que 0 o mayor que 1_000_000, o cantidad &lt;= 0. Muestra solo <code>Pedido invalido: subtotal o cantidad fuera de rango</code>.</li>
+<li>Si el tipo no es ESTANDAR, EXPRESS o RECOGIDA, muestra solo <code>Pedido invalido: tipo de entrega desconocido</code>.</li>
+<li>Miembro y subtotal &gt;= 10_000: 10 % de descuento.</li>
+<li>No miembro y subtotal &gt;= 20_000: 5 % de descuento.</li>
+<li>En los demás casos: 0 %.</li>
+<li>Descuento en centavos = subtotal × porcentaje / 100. Descarta cualquier fracción de centavo mediante división entera.</li>
+<li>Neto = subtotal − descuento.</li>
+<li>Envío: ESTANDAR=500, EXPRESS=1200, RECOGIDA=0.</li>
+<li>Envío gratis únicamente para ESTANDAR si el neto &gt;= 25_000. Comprueba el neto, no el subtotal.</li>
+<li>Total = neto + envío. No presentes un desglose de pedido válido cuando alguna entrada sea inválida.</li>
+</ol>
+<p>El porcentaje se selecciona con if/else if/else y la modalidad con switch. No acumules promociones: se aplica una sola tasa.</p>
+<h3 id="caso-inicial-esperado">Caso inicial esperado</h3>
+<p>Con subtotal=18_500, cantidad=4, miembro=true y EXPRESS:</p>
+<p><code>text
+Subtotal (centavos): 18500
+Descuento (%): 10
+Descuento (centavos): 1850
+Neto (centavos): 16650
+Envio (centavos): 1200
+Total (centavos): 17850</code></p>
+<h3 id="matriz-minima-de-pruebas">Matriz mínima de pruebas</h3>
+<p>En las filas sin cantidad explícita, usa cantidad=1.</p>
+<table>
+<thead>
+<tr>
+<th>Subtotal</th>
+<th>Miembro</th>
+<th>Entrega</th>
+<th>Descuento</th>
+<th>Neto</th>
+<th>Envío</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18500, cantidad=4</td>
+<td>true</td>
+<td>EXPRESS</td>
+<td>1850</td>
+<td>16650</td>
+<td>1200</td>
+<td>17850</td>
+</tr>
+<tr>
+<td>9999</td>
+<td>true</td>
+<td>ESTANDAR</td>
+<td>0</td>
+<td>9999</td>
+<td>500</td>
+<td>10499</td>
+</tr>
+<tr>
+<td>10000</td>
+<td>true</td>
+<td>ESTANDAR</td>
+<td>1000</td>
+<td>9000</td>
+<td>500</td>
+<td>9500</td>
+</tr>
+<tr>
+<td>10001</td>
+<td>true</td>
+<td>ESTANDAR</td>
+<td>1000</td>
+<td>9001</td>
+<td>500</td>
+<td>9501</td>
+</tr>
+<tr>
+<td>19999</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>0</td>
+<td>19999</td>
+<td>500</td>
+<td>20499</td>
+</tr>
+<tr>
+<td>20000</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1000</td>
+<td>19000</td>
+<td>500</td>
+<td>19500</td>
+</tr>
+<tr>
+<td>20001</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1000</td>
+<td>19001</td>
+<td>500</td>
+<td>19501</td>
+</tr>
+<tr>
+<td>8000</td>
+<td>false</td>
+<td>RECOGIDA</td>
+<td>0</td>
+<td>8000</td>
+<td>0</td>
+<td>8000</td>
+</tr>
+<tr>
+<td>26314</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1315</td>
+<td>24999</td>
+<td>500</td>
+<td>25499</td>
+</tr>
+<tr>
+<td>26315</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1315</td>
+<td>25000</td>
+<td>0</td>
+<td>25000</td>
+</tr>
+<tr>
+<td>26316</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1315</td>
+<td>25001</td>
+<td>0</td>
+<td>25001</td>
+</tr>
+<tr>
+<td>26315</td>
+<td>false</td>
+<td>EXPRESS</td>
+<td>1315</td>
+<td>25000</td>
+<td>1200</td>
+<td>26200</td>
+</tr>
+<tr>
+<td>0</td>
+<td>false</td>
+<td>RECOGIDA</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1000000</td>
+<td>true</td>
+<td>ESTANDAR</td>
+<td>100000</td>
+<td>900000</td>
+<td>0</td>
+<td>900000</td>
+</tr>
+</tbody>
+</table>
+<p>Prueba también subtotal=-1 y 1_000_001, cantidad=0 y -1, y entrega=DRON. Cambia una entrada inválida por vez y verifica el mensaje y la ausencia de un total válido. Para DRON usa los demás datos válidos. La cantidad valida el pedido; el subtotal ya es el total de sus productos, no lo multipliques de nuevo por cantidad.</p>
+<h3 id="cinco-pruebas-invalidas-una-por-ejecucion">Cinco pruebas inválidas, una por ejecución</h3>
+<p>Restaura primero subtotalCentavos=18500, cantidad=4, esMiembro=true y tipoEntrega="EXPRESS". Después modifica únicamente el dato indicado en cada fila.</p>
+<table>
+<thead>
+<tr>
+<th>Cambiar solo</th>
+<th>Mensaje esperado, sin otras líneas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>subtotalCentavos = -1</td>
+<td>Pedido invalido: subtotal o cantidad fuera de rango</td>
+</tr>
+<tr>
+<td>subtotalCentavos = 1000001</td>
+<td>Pedido invalido: subtotal o cantidad fuera de rango</td>
+</tr>
+<tr>
+<td>cantidad = 0</td>
+<td>Pedido invalido: subtotal o cantidad fuera de rango</td>
+</tr>
+<tr>
+<td>cantidad = -1</td>
+<td>Pedido invalido: subtotal o cantidad fuera de rango</td>
+</tr>
+<tr>
+<td>tipoEntrega = "DRON"</td>
+<td>Pedido invalido: tipo de entrega desconocido</td>
+</tr>
+</tbody>
+</table>
+<p>Coloca un breakpoint antes de la condición de envío gratis y observa descuentoCentavos, netoCentavos y envioCentavos. Compara dos casos en lados distintos de esa frontera.</p>
+<h2 id="revision-cruzada-y-entrega-10-minutos">Revisión cruzada y entrega · 10 minutos</h2>
+<p>Intercambia una entrada de frontera con otra pareja, calcula primero el resultado esperado y ejecuta. Explica un error encontrado o una prueba que habría detectado un error posible. No añadas nuevas funcionalidades para terminar antes.</p>
+<p>Publica las cinco clases completas y un README de comprobaciones en tu repositorio personal, y entrega el enlace en Campus. Incluye predicciones, entradas, salidas, explicación de tipos/operadores y evidencia de depuración. No entregues soluciones en el repositorio oficial ni archivos .class o configuración personal del IDE.</p>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reglas</td>
+<td>Condiciones y tasas representan exactamente los requisitos.</td>
+</tr>
+<tr>
+<td>Estructuras</td>
+<td>if, switch y ternario elegidos con claridad; sin anidación innecesaria.</td>
+</tr>
+<tr>
+<td>Pruebas</td>
+<td>Casos normales, límites e inválidos comparados con resultados esperados.</td>
+</tr>
+<tr>
+<td>Depuración</td>
+<td>Explicación de una causa y comprobación de su corrección.</td>
+</tr>
+<tr>
+<td>Legibilidad</td>
+<td>Nombres claros, cuatro espacios de indentación y TODO resueltos.</td>
+</tr>
+</tbody>
+</table>
+</body></html>

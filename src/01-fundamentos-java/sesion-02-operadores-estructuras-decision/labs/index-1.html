@@ -1,0 +1,354 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desconocido </title></head><body>
+<h1 id="laboratorios-de-la-sesion-2">Laboratorios de la sesión 2</h1>
+<p>Dispones de <strong>80 minutos para cinco actividades y 10 para pruebas cruzadas y cierre</strong>. Completa los TODO en tu repositorio personal. Usa JDK 21 como referencia; el código también es compatible con Java 17. Trabaja con datos inicializados y ejecuciones manuales, sin Scanner, ciclos, métodos auxiliares, dependencias ni excepciones.</p>
+<p>Cada clase inicial compila, pero contiene tareas pendientes. Primero predice, después implementa y finalmente compara. No publiques solo capturas: registra entradas y resultados en tu README personal.</p>
+<h2 id="lab-1-calcula-y-predice-10-minutos">Lab 1 · Calcula y predice · 10 minutos</h2>
+<p><strong>Archivo:</strong> <a href="S02Lab01CalculaYPredice.java">S02Lab01CalculaYPredice.java</a>.</p>
+<p>Con unidades=7, capacidad=2 y contador=3, completa las expresiones y muestra:</p>
+<p><code>text
+Suma: 9
+Resta: 5
+Producto: 14
+Division entera: 3
+Division decimal: 3.5
+Resto: 1
+Sin parentesis: 14
+Con parentesis: 20
+Contador incrementado: 4
+Contador decrementado: 3</code></p>
+<p>La división decimal de este ejercicio es <code>7.0 / capacidad</code>. Prueba luego unidades=8, manteniendo las demás entradas. Cambian suma, resta, producto, división entera y resto; la división decimal conserva el numerador literal 7.0. Explica esa diferencia y por qué % no calcula un porcentaje. Registra tu predicción antes de ejecutar.</p>
+<h2 id="lab-2-reglas-de-acceso-15-minutos">Lab 2 · Reglas de acceso · 15 minutos</h2>
+<p><strong>Archivo:</strong> <a href="S02Lab02ReglasDeAcceso.java">S02Lab02ReglasDeAcceso.java</a>.</p>
+<p>Regla: permitir acceso cuando edad &gt;= 18, exista membresía o invitación y no haya bloqueo. Construye un boolean con nombre claro y usa if/else para mostrar exactamente <code>Acceso permitido</code> o <code>Acceso denegado</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Edad</th>
+<th>Miembro</th>
+<th>Invitación</th>
+<th>Bloqueado</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17</td>
+<td>true</td>
+<td>true</td>
+<td>false</td>
+<td>Denegado</td>
+</tr>
+<tr>
+<td>18</td>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+<td>Permitido</td>
+</tr>
+<tr>
+<td>19</td>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+<td>Permitido</td>
+</tr>
+<tr>
+<td>18</td>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+<td>Denegado</td>
+</tr>
+<tr>
+<td>18</td>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+<td>Denegado</td>
+</tr>
+</tbody>
+</table>
+<p>Completa además las ocho combinaciones de miembro, invitación y bloqueo para edad 18. Explica dónde necesitas AND, OR y NOT. Un bloqueo debe negar el acceso aunque los demás requisitos se cumplan. Observa el boolean con Debug antes de seleccionar la rama.</p>
+<h2 id="lab-3-clasifica-resultados-15-minutos">Lab 3 · Clasifica resultados · 15 minutos</h2>
+<p><strong>Archivo:</strong> <a href="S02Lab03ClasificaResultados.java">S02Lab03ClasificaResultados.java</a>.</p>
+<p>La nota es un entero de 0 a 100. Antes de clasificar, rechaza valores fuera del rango. Usa una cadena if/else if/else con A desde 90, B desde 80, C desde 70, D desde 60 y E por debajo de 60. Muestra <code>Categoria A</code>, <code>Categoria B</code>, etc., o solo <code>Nota invalida</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Notas</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-1, 101</td>
+<td>Nota invalida</td>
+</tr>
+<tr>
+<td>0, 59</td>
+<td>Categoria E</td>
+</tr>
+<tr>
+<td>60, 69</td>
+<td>Categoria D</td>
+</tr>
+<tr>
+<td>70, 79</td>
+<td>Categoria C</td>
+</tr>
+<tr>
+<td>80, 89</td>
+<td>Categoria B</td>
+</tr>
+<tr>
+<td>90, 100</td>
+<td>Categoria A</td>
+</tr>
+</tbody>
+</table>
+<p>Con nota=85 se espera <code>Categoria B</code>. Prueba cada valor de la tabla. Explica qué ocurriría si comprobaras nota&gt;=60 antes de nota&gt;=90 sin cambiar las demás ramas. Estas categorías pertenecen al ejercicio; no representan una escala institucional de calificación.</p>
+<h2 id="lab-4-elige-la-entrega-15-minutos">Lab 4 · Elige la entrega · 15 minutos</h2>
+<p><strong>Archivo:</strong> <a href="S02Lab04EligeLaEntrega.java">S02Lab04EligeLaEntrega.java</a>.</p>
+<p>El texto tipoEntrega debe ser no null y estar en mayúsculas. Usa switch y default para resolver:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Costo en centavos</th>
+<th>Etiqueta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESTANDAR</td>
+<td>500</td>
+<td>Entrega a domicilio</td>
+</tr>
+<tr>
+<td>EXPRESS</td>
+<td>1200</td>
+<td>Entrega a domicilio</td>
+</tr>
+<tr>
+<td>RECOGIDA</td>
+<td>0</td>
+<td>Retiro en tienda</td>
+</tr>
+<tr>
+<td>DRON o cualquier otro texto</td>
+<td>No válido</td>
+<td>No mostrar etiqueta</td>
+</tr>
+</tbody>
+</table>
+<p>En una opción válida, muestra dos líneas. Para EXPRESS:</p>
+<p><code>text
+Costo (centavos): 1200
+Etiqueta: Entrega a domicilio</code></p>
+<p>Elige la etiqueta mediante un ternario simple y compara contenido de texto con equals. En una opción desconocida muestra únicamente <code>Tipo de entrega invalido</code>. Puedes usar -1 como señal interna; no lo muestres como costo válido.</p>
+<p>Compara la forma clásica con la forma de flecha en tu copia personal y prueba que ambas producen los mismos resultados. Entrega una sola versión y explica qué evita break y por qué las flechas no lo necesitan.</p>
+<h2 id="lab-5-motor-de-promociones-25-minutos">Lab 5 · Motor de promociones · 25 minutos</h2>
+<p><strong>Archivo:</strong> <a href="S02Lab05MotorPromociones.java">S02Lab05MotorPromociones.java</a>.</p>
+<p>Integra operadores y decisiones en un pedido. Entradas: subtotalCentavos como long, cantidad como int, esMiembro como boolean y tipoEntrega como String no null. Todo importe se muestra en centavos.</p>
+<h3 id="reglas">Reglas</h3>
+<ol>
+<li>Rechaza subtotal menor que 0 o mayor que 1_000_000, o cantidad &lt;= 0. Muestra solo <code>Pedido invalido: subtotal o cantidad fuera de rango</code>.</li>
+<li>Si el tipo no es ESTANDAR, EXPRESS o RECOGIDA, muestra solo <code>Pedido invalido: tipo de entrega desconocido</code>.</li>
+<li>Miembro y subtotal &gt;= 10_000: 10 % de descuento.</li>
+<li>No miembro y subtotal &gt;= 20_000: 5 % de descuento.</li>
+<li>En los demás casos: 0 %.</li>
+<li>Descuento en centavos = subtotal × porcentaje / 100. Descarta cualquier fracción de centavo mediante división entera.</li>
+<li>Neto = subtotal − descuento.</li>
+<li>Envío: ESTANDAR=500, EXPRESS=1200, RECOGIDA=0.</li>
+<li>Envío gratis únicamente para ESTANDAR si el neto &gt;= 25_000. Comprueba el neto, no el subtotal.</li>
+<li>Total = neto + envío. No presentes un desglose de pedido válido cuando alguna entrada sea inválida.</li>
+</ol>
+<p>El porcentaje se selecciona con if/else if/else y la modalidad con switch. No acumules promociones: se aplica una sola tasa.</p>
+<h3 id="caso-inicial-esperado">Caso inicial esperado</h3>
+<p>Con subtotal=18_500, cantidad=4, miembro=true y EXPRESS:</p>
+<p><code>text
+Subtotal (centavos): 18500
+Descuento (%): 10
+Descuento (centavos): 1850
+Neto (centavos): 16650
+Envio (centavos): 1200
+Total (centavos): 17850</code></p>
+<h3 id="matriz-minima-de-pruebas">Matriz mínima de pruebas</h3>
+<p>En las filas sin cantidad explícita, usa cantidad=1.</p>
+<table>
+<thead>
+<tr>
+<th>Subtotal</th>
+<th>Miembro</th>
+<th>Entrega</th>
+<th>Descuento</th>
+<th>Neto</th>
+<th>Envío</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18500, cantidad=4</td>
+<td>true</td>
+<td>EXPRESS</td>
+<td>1850</td>
+<td>16650</td>
+<td>1200</td>
+<td>17850</td>
+</tr>
+<tr>
+<td>9999</td>
+<td>true</td>
+<td>ESTANDAR</td>
+<td>0</td>
+<td>9999</td>
+<td>500</td>
+<td>10499</td>
+</tr>
+<tr>
+<td>10000</td>
+<td>true</td>
+<td>ESTANDAR</td>
+<td>1000</td>
+<td>9000</td>
+<td>500</td>
+<td>9500</td>
+</tr>
+<tr>
+<td>10001</td>
+<td>true</td>
+<td>ESTANDAR</td>
+<td>1000</td>
+<td>9001</td>
+<td>500</td>
+<td>9501</td>
+</tr>
+<tr>
+<td>19999</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>0</td>
+<td>19999</td>
+<td>500</td>
+<td>20499</td>
+</tr>
+<tr>
+<td>20000</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1000</td>
+<td>19000</td>
+<td>500</td>
+<td>19500</td>
+</tr>
+<tr>
+<td>20001</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1000</td>
+<td>19001</td>
+<td>500</td>
+<td>19501</td>
+</tr>
+<tr>
+<td>8000</td>
+<td>false</td>
+<td>RECOGIDA</td>
+<td>0</td>
+<td>8000</td>
+<td>0</td>
+<td>8000</td>
+</tr>
+<tr>
+<td>26314</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1315</td>
+<td>24999</td>
+<td>500</td>
+<td>25499</td>
+</tr>
+<tr>
+<td>26315</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1315</td>
+<td>25000</td>
+<td>0</td>
+<td>25000</td>
+</tr>
+<tr>
+<td>26316</td>
+<td>false</td>
+<td>ESTANDAR</td>
+<td>1315</td>
+<td>25001</td>
+<td>0</td>
+<td>25001</td>
+</tr>
+<tr>
+<td>26315</td>
+<td>false</td>
+<td>EXPRESS</td>
+<td>1315</td>
+<td>25000</td>
+<td>1200</td>
+<td>26200</td>
+</tr>
+<tr>
+<td>0</td>
+<td>false</td>
+<td>RECOGIDA</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1000000</td>
+<td>true</td>
+<td>ESTANDAR</td>
+<td>100000</td>
+<td>900000</td>
+<td>0</td>
+<td>900000</td>
+</tr>
+</tbody>
+</table>
+<p>Prueba también subtotal=-1 y 1_000_001, cantidad=0 y -1, y entrega=DRON. Cambia una entrada inválida por vez y verifica el mensaje y la ausencia de un total válido. Para DRON usa los demás datos válidos. La cantidad valida el pedido; el subtotal ya es el total de sus productos, no lo multipliques de nuevo por cantidad.</p>
+<p>Coloca un breakpoint antes de la condición de envío gratis y observa descuentoCentavos, netoCentavos y envioCentavos. Compara dos casos en lados distintos de esa frontera.</p>
+<h2 id="revision-cruzada-y-entrega-10-minutos">Revisión cruzada y entrega · 10 minutos</h2>
+<p>Intercambia una entrada de frontera con otra pareja, calcula primero el resultado esperado y ejecuta. Explica un error encontrado o una prueba que habría detectado un error posible. No añadas nuevas funcionalidades para terminar antes.</p>
+<p>Publica las cinco clases completas y un README de comprobaciones en tu repositorio personal, y entrega el enlace en Campus. Incluye predicciones, entradas, salidas, explicación de tipos/operadores y evidencia de depuración. No entregues soluciones en el repositorio oficial ni archivos .class o configuración personal del IDE.</p>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reglas</td>
+<td>Condiciones y tasas representan exactamente los requisitos.</td>
+</tr>
+<tr>
+<td>Estructuras</td>
+<td>if, switch y ternario elegidos con claridad; sin anidación innecesaria.</td>
+</tr>
+<tr>
+<td>Pruebas</td>
+<td>Casos normales, límites e inválidos comparados con resultados esperados.</td>
+</tr>
+<tr>
+<td>Depuración</td>
+<td>Explicación de una causa y comprobación de su corrección.</td>
+</tr>
+<tr>
+<td>Legibilidad</td>
+<td>Nombres claros, cuatro espacios de indentación y TODO resueltos.</td>
+</tr>
+</tbody>
+</table>
+</body></html>

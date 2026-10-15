@@ -1,0 +1,72 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desconocido </title></head><body>
+<h1 id="reto-1-sistema-de-tarifas-de-estacionamiento">Reto 1 · Sistema de tarifas de estacionamiento</h1>
+<p><strong>Sector:</strong> movilidad. <strong>Nivel:</strong> básico–intermedio. Integra variables, cálculos, decisiones, repetición, contadores y acumuladores.</p>
+<p>Un parqueadero necesita calcular el cobro de cada vehículo y resumir su jornada. Diseña tu programa de consola; no hay una plantilla que debas copiar. El docente asignará el reto en clase. Completa lo pendiente en casa para la siguiente clase.</p>
+<h2 id="antes-de-programar">Antes de programar</h2>
+<p>En tu README personal responde brevemente:</p>
+<ol>
+<li>¿Qué datos cambian para cada vehículo?</li>
+<li>¿Qué contadores necesitas y qué acumula el dinero?</li>
+<li>¿Qué decisiones debes tomar para calcular la tarifa y el descuento?</li>
+<li>¿Qué ciclo mantendrá abierta la jornada y cómo terminará?</li>
+</ol>
+<h2 id="lo-que-debes-construir">Lo que debes construir</h2>
+<ol>
+<li>Crea una clase <code>S03Reto01Estacionamiento</code> con main en tu proyecto personal. Usa Scanner para leer enteros desde la consola.</li>
+<li>Muestra un menú: 1=automóvil, 2=motocicleta, 0=terminar jornada. Permite finalizar sin registrar vehículos.</li>
+<li>Al elegir un vehículo, solicita horas como entero mayor que cero. Si tipo u horas no son válidos, explica el error y vuelve a pedir el dato; no registres un vehículo incompleto.</li>
+<li>Calcula el valor inicial: automóvil, 4000 pesos por hora; motocicleta, 2000 pesos por hora. Usa long para importes en pesos enteros.</li>
+<li>Aplica un único descuento: automóvil con <strong>más de 5 horas</strong>, 10 %; motocicleta con <strong>más de 8 horas</strong>, 5 %. En el límite exacto no hay descuento.</li>
+<li>Muestra para ese vehículo <code>Valor inicial</code>, <code>Descuento</code> y <code>Total a pagar</code>, con sus importes en pesos. La tarifa por hora se multiplica por horas; no escribas un if para cada duración.</li>
+<li>Actualiza los contadores de automóviles, motocicletas y vehículos totales, y suma el total pagado al dinero recaudado. Hazlo una sola vez por vehículo válido.</li>
+<li>Vuelve al menú. Cuando se seleccione 0, muestra el resumen de la jornada con los cuatro valores acumulados.</li>
+</ol>
+<p>Las tarifas son múltiplos de 100: los descuentos indicados producen pesos enteros, sin necesitar double. No uses arrays, colecciones, clases auxiliares ni frameworks. El ciclo concreto puede variar si conserva el comportamiento.</p>
+<h2 id="pruebas-minimas">Pruebas mínimas</h2>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Horas</th>
+<th>Valor inicial</th>
+<th>Descuento</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automóvil</td>
+<td>5</td>
+<td>20000</td>
+<td>0</td>
+<td>20000</td>
+</tr>
+<tr>
+<td>Automóvil</td>
+<td>6</td>
+<td>24000</td>
+<td>2400</td>
+<td>21600</td>
+</tr>
+<tr>
+<td>Motocicleta</td>
+<td>8</td>
+<td>16000</td>
+<td>0</td>
+<td>16000</td>
+</tr>
+<tr>
+<td>Motocicleta</td>
+<td>9</td>
+<td>18000</td>
+<td>900</td>
+<td>17100</td>
+</tr>
+</tbody>
+</table>
+<p>Registra esos cuatro vehículos en una jornada y finaliza. El resumen debe mostrar <strong>4 vehículos, 2 automóviles, 2 motocicletas y 74700 pesos recaudados</strong>. Prueba también horas=0 y tipo=7: se corrigen sin aumentar contadores. En otra ejecución elige 0 inmediatamente: los totales deben ser cero.</p>
+<h2 id="extension-opcional">Extensión opcional</h2>
+<p>Limita la tarifa diaria a 35000 pesos para automóvil y 20000 para motocicleta. Decide si el límite se aplica antes o después del descuento, documenta la regla y demuestra con un caso que tu programa la respeta. La extensión no es necesaria para la entrega base.</p>
+<h2 id="entrega">Entrega</h2>
+<p>Entrega tu clase Java y un README con decisiones, entradas y resultados de las pruebas mínimas en tu repositorio personal; comparte el enlace por Campus. Puedes elegir otros nombres de variables y ciclos si explicas tu solución y respetas las reglas. La gestión de entradas no numéricas es opcional; no publiques archivos compilados ni configuración del IDE.</p>
+</body></html>

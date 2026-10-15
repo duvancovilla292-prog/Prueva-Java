@@ -1,0 +1,293 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desconocido </title></head><body>
+<h1 id="laboratorios-de-la-sesion-1">Laboratorios de la sesión 1</h1>
+<p>Completa los TODO de las cinco clases en tu copia personal. Las plantillas compilan desde el inicio, pero no están resueltas: que un archivo compile no significa que el laboratorio esté completo.</p>
+<p>Trabaja con IntelliJ IDEA y JDK 21 como referencia del curso; estas clases también son compatibles con JDK 17. Usa tipos explícitos, datos ficticios y nombres claros. No uses Scanner, if, ciclos, conversiones, métodos auxiliares ni dependencias externas en estas actividades.</p>
+<h2 id="tiempo-de-practica-y-trabajo-para-casa">Tiempo de práctica y trabajo para casa</h2>
+<p><strong>El bloque de laboratorios en clase tiene un máximo de 40 minutos.</strong> El resto de la sesión se dedica a explicación, preguntas y demos del docente.</p>
+<ul>
+<li>Empieza por los labs 1, 2 y 3, en ese orden; no es obligatorio terminar los tres dentro del bloque.</li>
+<li>Al cumplirse los 40 minutos, guarda lo realizado. Completa en casa cualquier lab pendiente y los labs 4 y 5.</li>
+<li>Trae los cinco labs completados a la siguiente clase, en tu repositorio personal, con el enlace listo para entregar en Campus según la indicación del docente.</li>
+<li>Haz únicamente las pruebas mínimas indicadas para cada lab. Las ampliaciones opcionales no son requisito de entrega.</li>
+<li>En clase registra solo los datos probados y el resultado. Completa en casa las respuestas breves; basta una frase por pregunta, sin informes extensos ni capturas obligatorias.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Tiempo en clase</th>
+<th>Actividad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–8 min</td>
+<td>Lab 1: saludo</td>
+</tr>
+<tr>
+<td>8–18 min</td>
+<td>Lab 2: salida</td>
+</tr>
+<tr>
+<td>18–35 min</td>
+<td>Lab 3: variables</td>
+</tr>
+<tr>
+<td>35–40 min</td>
+<td>Revisión breve y guardar avances</td>
+</tr>
+</tbody>
+</table>
+<h2 id="antes-de-escribir-codigo">Antes de escribir código</h2>
+<ol>
+<li>Trabaja en tu copia personal y abre la clase indicada en cada lab. No edites ni resuelvas las actividades en el repositorio oficial.</li>
+<li>Escribe dentro de <code>public static void main(String[] args)</code>, entre sus llaves. Conserva el nombre del archivo y el de la clase; no crees otro main.</li>
+<li>Un <code>// TODO</code> es una tarea comentada. Escribe la instrucción Java en una línea nueva sin <code>//</code>; una instrucción comentada no se ejecuta. Cuando termines, puedes quitar el TODO o marcarlo como completado.</li>
+<li>Usa <code>System.out.println</code> con esa escritura exacta y punto y coma al final. Texto entre comillas dobles; variables fuera de las comillas. Por ejemplo: <code>System.out.println("Cantidad: " + cantidad);</code> requiere que cantidad ya esté declarada e inicializada.</li>
+<li>Al usar Run, elige la clase del lab actual. Si ejecutas otra clase, verás su salida aunque acabes de editar este archivo.</li>
+<li>Compara solo la salida de tu programa, no mensajes del IDE como el comando de ejecución o <code>Process finished with exit code 0</code>.</li>
+<li>Salvo que se indique lo contrario, usa las etiquetas y el orden del bloque esperado. Los ejemplos de salida usan textos sin tildes para que la comparación sea directa. No agregues encabezados, resultados de pruebas anteriores ni mensajes de depuración a la versión final.</li>
+<li>Para probar otro caso, cambia los valores iniciales y ejecuta otra vez. Guarda cada resultado en tu README personal; no necesitas crear otras clases ni automatizar las pruebas.</li>
+</ol>
+<h2 id="registro-de-comprobaciones">Registro de comprobaciones</h2>
+<p>En el README de tu repositorio personal, crea una sección por lab. Para cada ejecución anota: datos usados, resultado que esperabas, resultado observado y si coincidió. Incluye las respuestas breves solicitadas. No hace falta una captura de pantalla por prueba ni un documento Word.</p>
+<p>Los bloques de salida son una referencia para comparar, no código Java que debas pegar dentro de main.</p>
+<h2 id="metodo-de-trabajo">Método de trabajo</h2>
+<ol>
+<li>Lee el objetivo y predice la salida antes de ejecutar.</li>
+<li>Completa un TODO a la vez y ejecuta la clase correspondiente.</li>
+<li>Compara la salida con los requisitos y corrige diferencias.</li>
+<li>Anota qué comprobaste y explica tus decisiones en comentarios o en tu README personal.</li>
+</ol>
+<h2 id="lab-1-mi-primer-saludo-clase-8-minutos">Lab 1 · Mi primer saludo · Clase: 8 minutos</h2>
+<h3 id="pasos-para-completar-la-actividad">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab01MiPrimerSaludo.java</code> en tu proyecto personal. Escribe dentro de las llaves de <code>main</code>, debajo de los TODO; no crees otra clase ni otro main.</li>
+<li>Agrega una instrucción <code>System.out.println</code> que imprima el texto <code>Hola, Java!</code>. Escribe el texto entre comillas dobles y termina la instrucción con <code>;</code>.</li>
+<li>Agrega una segunda instrucción <code>System.out.println</code> que imprima <code>Nombre:</code> seguido de un nombre ficticio. En este lab puedes escribir todo el mensaje como texto, sin declarar variables.</li>
+<li>Agrega una tercera instrucción <code>System.out.println</code> que imprima <code>Meta:</code> seguida de una frase sobre lo que quieres aprender.</li>
+<li>Antes de ejecutar, escribe en un comentario <code>// Predicción:</code> las tres líneas que esperas ver. Ese comentario no debe aparecer en la consola.</li>
+<li>Ejecuta <strong>Run → Lab01MiPrimerSaludo</strong>. Comprueba que aparecen tres líneas y que cada una empieza con la etiqueta indicada abajo. No agregues líneas en blanco ni impresiones de depuración.</li>
+<li><strong>Opcional:</strong> cambia solo el texto de la meta y ejecuta otra vez. Comprueba que las otras líneas no cambiaron.</li>
+<li>En tu README personal, responde: ¿en qué método comienza el programa? ¿Por qué cada mensaje aparece en una línea distinta? Guarda la salida final.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> hay tres instrucciones de salida, una ejecución registrada y dos respuestas de una frase, que puedes completar en casa. Para este lab se evalúan el saludo y las etiquetas; el nombre y la meta pueden variar.</p>
+<p><strong>Archivo:</strong> <a href="Lab01MiPrimerSaludo.java">Lab01MiPrimerSaludo.java</a>. <strong>Modalidad:</strong> clase. <strong>Objetivo:</strong> ejecutar un programa y producir tres líneas.</p>
+<p>Completa los TODO para mostrar un saludo, un nombre ficticio y una meta. Ejemplo de formato:</p>
+<p><code>text
+Hola, Java!
+Nombre: Ana
+Meta: Aprender a ejecutar y comprender un programa Java.</code></p>
+<p>Puedes cambiar el nombre y la meta. Comprueba que hay exactamente tres líneas en ese orden. Cambiar la meta y repetir la ejecución es una ampliación opcional. Explica qué hace <code>main</code> y qué agrega <code>println</code> al final de cada salida.</p>
+<h2 id="lab-2-ordena-la-salida-clase-10-minutos">Lab 2 · Ordena la salida · Clase: 10 minutos</h2>
+<h3 id="pasos-para-completar-la-actividad_1">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab02OrdenaLaSalida.java</code>. Todavía no cambies las tres instrucciones que ya tiene.</li>
+<li>Escribe en un comentario cómo crees que se distribuyen A, B y C entre las líneas. No agregues println para imprimir la predicción.</li>
+<li>Ejecuta la clase una vez y guarda su salida original en tu README personal. Explica si coincidió con tu predicción.</li>
+<li>Modifica esas mismas tres instrucciones: las dos primeras deben usar <code>System.out.print</code> para imprimir A y B con el separador <code>-</code>; la tercera debe usar <code>System.out.println</code> para imprimir C y terminar la primera línea.</li>
+<li>Debajo de esas instrucciones agrega un <code>System.out.println</code> para imprimir <code>Fin del laboratorio</code> en la segunda línea.</li>
+<li>Ejecuta de nuevo. Compara carácter por carácter con el bloque de salida: un espacio a cada lado de cada guion, ninguna línea vacía y exactamente dos líneas.</li>
+<li>Escribe en tu README cuál instrucción termina la primera línea y por qué las dos primeras no la terminan.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> conservas la predicción y la salida inicial como evidencia, pero la clase entregada muestra únicamente las dos líneas solicitadas abajo. No dejes dos versiones del programa ejecutándose en el mismo main.</p>
+<p><strong>Archivo:</strong> <a href="Lab02OrdenaLaSalida.java">Lab02OrdenaLaSalida.java</a>. <strong>Modalidad:</strong> clase. <strong>Objetivo:</strong> controlar los saltos de línea.</p>
+<p>Antes de modificar el código, escribe tu predicción de la salida inicial. Ejecuta y compara. Después completa los TODO para producir exactamente:</p>
+<p><code>text
+A - B - C
+Fin del laboratorio</code></p>
+<p>Usa al menos un <code>print</code> y un <code>println</code>. Comprueba espacios, guiones y saltos. Explica qué instrucciones terminan una línea y cuáles no.</p>
+<h2 id="lab-3-datos-con-sentido-clase-17-minutos">Lab 3 · Datos con sentido · Clase: 17 minutos</h2>
+<h3 id="pasos-para-completar-la-actividad_2">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab03DatosConSentido.java</code>. Dentro de main crea las cinco variables que aparecen en la tabla. Elige un tipo explícito para cada una; no uses var en este lab.</li>
+<li>Inicializa las variables con el caso A. El nombre usa comillas dobles; la inicial, comillas simples; la edad no lleva comillas; la temperatura usa punto decimal; true/false se escriben sin comillas.</li>
+<li>Agrega cinco instrucciones <code>System.out.println</code>, una por dato, en este orden: nombre, edad, temperatura, inicial y activo.</li>
+<li>En cada salida concatena la etiqueta con la variable mediante <code>+</code>. Por ejemplo, para un dato distinto: <code>System.out.println("Cantidad: " + cantidad);</code>. No escribas Ana o 20 directamente en las instrucciones de salida: deben salir de tus variables.</li>
+<li>Predice la salida del caso A en tu README personal, ejecuta la clase y compara con el bloque esperado de abajo.</li>
+<li><strong>Opcional:</strong> prueba el caso B cambiando solo los valores iniciales, sin modificar los println.</li>
+<li>En casa, justifica el tipo de una variable y explica la diferencia entre String y char en dos frases como máximo.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> las cinco variables tienen tipos apropiados, el caso A muestra cinco líneas y las salidas usan variables, no resultados fijos.</p>
+<p><strong>Archivo:</strong> <a href="Lab03DatosConSentido.java">Lab03DatosConSentido.java</a>. <strong>Modalidad:</strong> clase. <strong>Objetivo:</strong> elegir tipos por el significado del dato.</p>
+<p>Declara las variables <code>nombre</code>, <code>edad</code>, <code>temperatura</code>, <code>inicial</code> y <code>activo</code>. Justifica el tipo de cada una y muestra las etiquetas <code>Nombre</code>, <code>Edad</code>, <code>Temperatura</code>, <code>Inicial</code> y <code>Activo</code>, una por línea.</p>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Nombre</th>
+<th>Edad</th>
+<th>Temperatura</th>
+<th>Inicial</th>
+<th>Activo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Ana</td>
+<td>20</td>
+<td>23.5</td>
+<td>A</td>
+<td>true</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Luis</td>
+<td>25</td>
+<td>18.0</td>
+<td>L</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>Para el caso A, la salida debe ser:</p>
+<p><code>text
+Nombre: Ana
+Edad: 20
+Temperatura: 23.5
+Inicial: A
+Activo: true</code></p>
+<p><strong>Prueba mínima obligatoria:</strong> caso A. El caso B queda como ampliación opcional. Completa la explicación breve de tipos en casa.</p>
+<h2 id="lab-4-diagnostica-y-corrige-casa">Lab 4 · Diagnostica y corrige · Casa</h2>
+<h3 id="pasos-para-completar-la-actividad_3">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab04DiagnosticaYCorrige.java</code>. Los ejemplos incorrectos están dentro de comentarios; todavía no se ejecutan.</li>
+<li>Para el caso 1, copia únicamente el fragmento Java que está después de <code>Caso 1:</code> a una línea nueva dentro de main. No copies las palabras <code>Caso 1:</code>. Deja la instrucción incorrecta activa, intenta Run y anota el diagnóstico.</li>
+<li>Corrige ese fragmento conservando el nombre Ana como String. Agrega un <code>System.out.println</code> que muestre la etiqueta <code>Nombre:</code> y la variable nombre. Ejecuta hasta que compile antes de pasar al caso 2.</li>
+<li>Repite el proceso con el caso 2: activa el fragmento Java, observa el error y elige un tipo que conserve 23.5. No cambies 23.5 por 23 para ocultar el error. Agrega una salida con <code>Temperatura:</code> y la variable temperatura.</li>
+<li>Para el caso 3, activa las dos instrucciones indicadas, observa el error e inicializa edad con 20 antes de imprimirla. Ajusta esa impresión para mostrar <code>Edad:</code> y la variable edad.</li>
+<li>Para el caso 4, activa la declaración final y su reasignación. Observa el diagnóstico; elimina la reasignación, conserva final y agrega la impresión <code>Curso:</code> con CURSO. No elimines final para resolver este caso.</li>
+<li>Mantén las correcciones de los casos anteriores mientras avanzas, pero no declares dos veces la misma variable. Al final deja una sola versión corregida de cada caso y ninguna instrucción inválida activa.</li>
+<li>Ejecuta la clase completa y comprueba exactamente cuatro líneas: <code>Nombre: Ana</code>, <code>Temperatura: 23.5</code>, <code>Edad: 20</code> y <code>Curso: Java</code>, en ese orden.</li>
+<li>En tu README personal registra cuatro filas: caso, mensaje observado, causa y corrección. No necesitas copiar todos los detalles internos del IDE: identifica el mensaje relevante.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> los cuatro errores fueron observados y explicados, la versión final compila y cada dato se imprime una sola vez. Los comentarios originales pueden permanecer como referencia.</p>
+<p><strong>Archivo:</strong> <a href="Lab04DiagnosticaYCorrige.java">Lab04DiagnosticaYCorrige.java</a>. <strong>Modalidad:</strong> casa, para la siguiente clase. <strong>Objetivo:</strong> usar los diagnósticos del compilador para corregir cuatro errores.</p>
+<p>Los fragmentos incorrectos están comentados. Activa uno por vez en tu copia personal, intenta compilar, lee el diagnóstico y corrígelo antes de pasar al siguiente. No dejes errores activos al entregar.</p>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>Requisito de la corrección</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Texto con comillas incorrectas</td>
+<td>Conservar Ana como String y mostrar <code>Nombre: Ana</code>.</td>
+</tr>
+<tr>
+<td>Decimal asignado a int</td>
+<td>Conservar 23.5 usando un tipo apropiado y mostrar <code>Temperatura: 23.5</code>.</td>
+</tr>
+<tr>
+<td>Variable local sin inicializar</td>
+<td>Dar a edad el valor 20 antes de leerla y mostrar <code>Edad: 20</code>.</td>
+</tr>
+<tr>
+<td>Reasignación de final</td>
+<td>Mantener CURSO como final con Java y mostrar <code>Curso: Java</code>; eliminar la reasignación.</td>
+</tr>
+</tbody>
+</table>
+<p>La clase corregida debe mostrar esas cuatro líneas en ese orden. Para cada caso, registra en tu README personal el mensaje observado, la causa y tu corrección. Los mensajes pueden variar según el IDE o compilador: se evalúa la explicación, no memorizar su texto.</p>
+<h2 id="lab-5-perfil-del-estudiante-casa">Lab 5 · Perfil del estudiante · Casa</h2>
+<h3 id="pasos-para-completar-la-actividad_4">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab05PerfilEstudiante.java</code>. Declara nombre, edad, ciudad, promedio y activo con tipos explícitos e inicialízalos usando el perfil A de la tabla.</li>
+<li>Declara <code>final String CURSO</code> e inicialízalo con <code>"Java"</code>. No intentes cambiar su valor más adelante.</li>
+<li>Agrega un println para el encabezado <code>=== Perfil del estudiante ===</code>.</li>
+<li>Agrega seis println para imprimir las etiquetas Nombre, Edad, Ciudad, Promedio, Activo y Curso, cada una con <code>:</code> y su variable. Respeta ese orden. No escribas los valores directamente dentro de los mensajes.</li>
+<li>Después de mostrar la ficha inicial, escribe una reasignación de ciudad con la ciudad nueva del perfil A. No vuelvas a escribir el tipo String: la variable ya existe.</li>
+<li>Debajo de la reasignación agrega un println con <code>Ciudad actualizada:</code> y la variable ciudad.</li>
+<li>Ejecuta la clase y compara sus ocho líneas con el bloque de salida esperado.</li>
+<li>Coloca un breakpoint en la línea que reasigna ciudad y ejecuta Debug. Antes de ejecutar la línea debes ver Cucuta; después de Step Over debes ver Bogota. Registra ambos valores en tu README.</li>
+<li><strong>Opcional:</strong> prueba el perfil B cambiando únicamente los datos, incluida la ciudad nueva.</li>
+<li>Escribe una justificación de tipo y una frase sobre lo que impide final. Conserva la salida del perfil A y una nota con los dos valores observados de ciudad.</li>
+</ol>
+<p><strong>Terminado cuando:</strong> el perfil A produce ocho líneas coherentes y anotaste la ciudad antes y después de reasignarla.</p>
+<p><strong>Archivo:</strong> <a href="Lab05PerfilEstudiante.java">Lab05PerfilEstudiante.java</a>. <strong>Modalidad:</strong> casa. <strong>Objetivo:</strong> integrar tipos, salida, una constante y una reasignación observable.</p>
+<p>Completa los TODO para mostrar una ficha con nombre, edad, ciudad, promedio, estado activo y la constante CURSO con Java. Después cambia la ciudad mediante una reasignación y muestra el nuevo valor.</p>
+<table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>Nombre</th>
+<th>Edad</th>
+<th>Ciudad inicial</th>
+<th>Promedio</th>
+<th>Activo</th>
+<th>Ciudad nueva</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Ana</td>
+<td>20</td>
+<td>Cucuta</td>
+<td>4.2</td>
+<td>true</td>
+<td>Bogota</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Luis</td>
+<td>25</td>
+<td>Medellin</td>
+<td>3.8</td>
+<td>false</td>
+<td>Cali</td>
+</tr>
+</tbody>
+</table>
+<p>Salida esperada para el perfil A:</p>
+<p><code>text
+=== Perfil del estudiante ===
+Nombre: Ana
+Edad: 20
+Ciudad: Cucuta
+Promedio: 4.2
+Activo: true
+Curso: Java
+Ciudad actualizada: Bogota</code></p>
+<p>El perfil B es opcional; el perfil A es la prueba mínima obligatoria. Coloca un breakpoint en la reasignación de ciudad: observa el valor antes, ejecuta Step Over y observa el valor después. Registra ambos valores y explica una elección de tipo y qué garantiza final en CURSO, con una frase por respuesta.</p>
+<h2 id="criterios-de-revision">Criterios de revisión</h2>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Evidencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ejecución</td>
+<td>Las cinco clases compilan y se ejecutan por separado.</td>
+</tr>
+<tr>
+<td>Datos</td>
+<td>Tipos compatibles y elecciones justificadas.</td>
+</tr>
+<tr>
+<td>Salida</td>
+<td>Formato solicitado y resultados comparados con una predicción.</td>
+</tr>
+<tr>
+<td>Diagnóstico</td>
+<td>Cuatro errores explicados y corregidos en el lab 4.</td>
+</tr>
+<tr>
+<td>Depuración</td>
+<td>Valor de ciudad observado antes y después en el lab 5.</td>
+</tr>
+<tr>
+<td>Legibilidad</td>
+<td>Nombres claros, indentación de cuatro espacios y TODO completados.</td>
+</tr>
+</tbody>
+</table>
+<p>No se espera una copia de las demos: debes poder explicar cada decisión. Si necesitas ayuda, presenta tu predicción, el mensaje de error y lo que ya intentaste.</p>
+<h2 id="entrega">Entrega</h2>
+<p>Para la siguiente clase, publica las cinco clases y un README breve con las comprobaciones mínimas en tu repositorio personal. Completa en casa todo lo que no terminaste en los 40 minutos. Entrega el enlace en Campus. No subas archivos compilados ni configuración personal de IntelliJ IDEA. No envíes tus soluciones al repositorio oficial del curso.</p>
+</body></html>

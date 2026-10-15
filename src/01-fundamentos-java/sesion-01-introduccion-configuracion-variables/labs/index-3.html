@@ -1,0 +1,169 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desconocido </title></head><body>
+<h1 id="laboratorios-de-la-sesion-1">Laboratorios de la sesión 1</h1>
+<p>Trabaja primero los labs 1–3 durante los <strong>40 minutos máximos de práctica en clase</strong>. Completa lo pendiente y los labs 4–5 en casa para la siguiente clase.</p>
+<h2 id="antes-de-escribir-codigo">Antes de escribir código</h2>
+<ul>
+<li>Usa tu proyecto personal en IntelliJ IDEA, con JDK 21 o 17. Conserva el archivo, la clase y su main.</li>
+<li>Escribe las instrucciones dentro de main, debajo del TODO correspondiente. Los comentarios con // no se ejecutan.</li>
+<li>Texto entre comillas; variables fuera de ellas. Ejemplo: <code>System.out.println("Cantidad: " + cantidad);</code>. Termina cada instrucción con <code>;</code>.</li>
+<li>Ejecuta la clase del lab actual. Compara solo sus mensajes, no los avisos del IDE. No pegues los bloques de salida como código Java.</li>
+<li>Cambia los datos iniciales para cada prueba. Guarda las comprobaciones y respuestas breves en el README de tu repositorio personal.</li>
+</ul>
+<h2 id="lab-1-mi-primer-saludo-clase-8-minutos">Lab 1 · Mi primer saludo · Clase: 8 minutos</h2>
+<p><strong>Archivo:</strong> <a href="Lab01MiPrimerSaludo.java">Lab01MiPrimerSaludo.java</a>.</p>
+<h3 id="pasos-para-completar-la-actividad">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab01MiPrimerSaludo.java</code> en tu proyecto personal.</li>
+<li><strong>TODO 1: Mostrar "Hola, Java!" en una línea.</strong> Agrega un <code>System.out.println</code> que imprima <code>Hola, Java!</code>. Escribe el texto entre comillas dobles y termina con <code>;</code>.</li>
+<li><strong>TODO 2: Mostrar tu nombre en una segunda línea, con la etiqueta "Nombre: ".</strong> Agrega un segundo <code>System.out.println</code> con <code>Nombre:</code> seguido de un nombre ficticio. Puedes escribir todo como texto, sin variables.</li>
+<li><strong>TODO 3: Mostrar una meta de aprendizaje en una tercera línea, con "Meta: ".</strong> Agrega un tercer <code>System.out.println</code> con <code>Meta:</code> seguida de una frase sobre lo que quieres aprender.</li>
+<li><strong>TODO 4: Escribir aquí qué esperas ver antes de ejecutar.</strong> Antes de ejecutar, escribe un comentario <code>// Predicción:</code> con las tres líneas que esperas ver. No imprimas la predicción en consola.</li>
+<li><strong>TODO 5: Ejecutar y explicar en un comentario dónde comienza el programa.</strong> Ejecuta <strong>Run → Lab01MiPrimerSaludo</strong>. Comprueba las tres líneas y escribe un comentario indicando que la ejecución comienza en <code>main</code>. En tu README personal responde en una frase qué agrega <code>println</code> al final de cada mensaje.</li>
+</ol>
+<p><strong>Salida de ejemplo:</strong> puedes cambiar el nombre y la meta; conserva el saludo, las etiquetas y el orden.</p>
+<p><code>text
+Hola, Java!
+Nombre: Ana
+Meta: Aprender a ejecutar y comprender un programa Java.</code></p>
+<h2 id="lab-2-ordena-la-salida-clase-10-minutos">Lab 2 · Ordena la salida · Clase: 10 minutos</h2>
+<p><strong>Archivo:</strong> <a href="Lab02OrdenaLaSalida.java">Lab02OrdenaLaSalida.java</a>.</p>
+<p>La clase ya contiene <code>print("A")</code>, <code>println("B")</code> y <code>println("C")</code>.</p>
+<h3 id="pasos-para-completar-la-actividad_1">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab02OrdenaLaSalida.java</code> en tu proyecto personal.</li>
+<li><strong>TODO 1: Predecir la salida de estas tres instrucciones en un comentario.</strong> Sin modificar las instrucciones, escribe un comentario con la salida que esperas. Indica en qué línea aparecerá cada letra.</li>
+<li><strong>TODO 2: Ejecutar y explicar cualquier diferencia con tu predicción.</strong> Ejecuta la versión original. Guarda su salida y explica en una frase si coincidió con tu predicción.</li>
+<li><strong>TODO 3: Modificar las instrucciones anteriores para obtener: A - B - C</strong> Modifica esas mismas tres instrucciones: imprime <code>A -</code> y <code>B -</code> con <code>System.out.print</code>, y <code>C</code> con <code>System.out.println</code>. No conserves otro bloque que imprima la versión inicial.</li>
+<li><strong>TODO 4: Agregar debajo una segunda línea que diga "Fin del laboratorio".</strong> Después de las tres instrucciones agrega un <code>System.out.println</code> con el texto <code>Fin del laboratorio</code>.</li>
+<li><strong>TODO 5: Explicar qué instrucción produce cada salto de línea.</strong> Ejecuta otra vez y comprueba exactamente las dos líneas de abajo. En un comentario explica qué instrucción termina cada línea.</li>
+</ol>
+<p><strong>Salida final esperada:</strong></p>
+<p><code>text
+A - B - C
+Fin del laboratorio</code></p>
+<h2 id="lab-3-datos-con-sentido-clase-17-minutos">Lab 3 · Datos con sentido · Clase: 17 minutos</h2>
+<p><strong>Archivo:</strong> <a href="Lab03DatosConSentido.java">Lab03DatosConSentido.java</a>.</p>
+<h3 id="pasos-para-completar-la-actividad_2">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab03DatosConSentido.java</code> en tu proyecto personal.</li>
+<li><strong>TODO 1: Elegir y justificar los tipos para nombre, edad, temperatura, inicial y activo. Usa String, int, double, char y boolean.</strong> Elige tipos explícitos para nombre, edad, temperatura, inicial y activo usando String, int, double, char y boolean. Justifica brevemente una elección.</li>
+<li><strong>TODO 2: Declarar e inicializar las cinco variables con nombres claros.</strong> Declara las cinco variables e inicialízalas con el caso A de la tabla. Usa comillas dobles para nombre, simples para inicial, punto decimal para temperatura y ningún tipo de comillas para edad y activo.</li>
+<li><strong>TODO 3: Mostrar cada dato en su propia línea, con una etiqueta.</strong> Agrega cinco <code>System.out.println</code> en el orden de la salida esperada. Une cada etiqueta y su variable con <code>+</code>; no escribas los resultados como textos fijos.</li>
+<li><strong>TODO 4: Probar el caso A del README; el caso B es opcional.</strong> Ejecuta con el caso A y compara las cinco líneas. El caso B es opcional: cambia solo los valores iniciales, sin modificar las impresiones.</li>
+<li><strong>TODO 5: Explicar por qué String no es un tipo primitivo.</strong> Explica en una frase que String representa texto y es una clase, no un tipo primitivo.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>nombre</th>
+<th>edad</th>
+<th>temperatura</th>
+<th>inicial</th>
+<th>activo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A · obligatorio</td>
+<td>Ana</td>
+<td>20</td>
+<td>23.5</td>
+<td>A</td>
+<td>true</td>
+</tr>
+<tr>
+<td>B · opcional</td>
+<td>Luis</td>
+<td>25</td>
+<td>18.0</td>
+<td>L</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Salida del caso A:</strong></p>
+<p><code>text
+Nombre: Ana
+Edad: 20
+Temperatura: 23.5
+Inicial: A
+Activo: true</code></p>
+<h2 id="lab-4-diagnostica-y-corrige-casa">Lab 4 · Diagnostica y corrige · Casa</h2>
+<p><strong>Archivo:</strong> <a href="Lab04DiagnosticaYCorrige.java">Lab04DiagnosticaYCorrige.java</a>.</p>
+<p>Activa y corrige un caso por vez. Copia únicamente el fragmento Java del comentario a una línea nueva, sin las palabras <code>Caso 1:</code>, etc. Conserva una sola versión corregida de cada dato.</p>
+<h3 id="pasos-para-completar-la-actividad_3">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab04DiagnosticaYCorrige.java</code> en tu proyecto personal.</li>
+<li><strong>TODO 1: Corregir las comillas, mostrar el nombre y explicar la causa.</strong> Prueba el fragmento <code>String nombre = 'Ana';</code>, lee el error y corrige las comillas conservando Ana como texto. Imprime la variable con la etiqueta <code>Nombre:</code>.</li>
+<li><strong>TODO 2: Conservar el valor decimal usando un tipo adecuado y mostrarlo.</strong> Prueba <code>int temperatura = 23.5;</code>, lee el error y cambia el tipo para conservar el decimal. Imprime la variable con <code>Temperatura:</code>; no sustituyas 23.5 por 23.</li>
+<li><strong>TODO 3: Inicializar edad antes de mostrarla y explicar por qué es necesario.</strong> Activa la declaración de edad y su impresión sin inicializar, observa el error y asigna 20 antes de leerla. Ajusta el println para mostrar <code>Edad:</code> y la variable.</li>
+<li><strong>TODO 4: Conservar CURSO como final y mostrar "Java", sin reasignarlo.</strong> Activa la declaración de CURSO y su reasignación, observa el error y elimina la reasignación. Mantén <code>final</code> y agrega un println con <code>Curso:</code> y CURSO.</li>
+<li><strong>TODO 5: Registrar los cuatro mensajes del compilador en tu README personal, junto con la causa y la corrección aplicada a cada caso.</strong> En tu README personal escribe cuatro filas: caso, mensaje observado, causa y corrección. Ejecuta la versión final: debe compilar e imprimir solo las cuatro líneas de abajo.</li>
+</ol>
+<p><strong>Salida final esperada:</strong></p>
+<p><code>text
+Nombre: Ana
+Temperatura: 23.5
+Edad: 20
+Curso: Java</code></p>
+<h2 id="lab-5-perfil-del-estudiante-casa">Lab 5 · Perfil del estudiante · Casa</h2>
+<p><strong>Archivo:</strong> <a href="Lab05PerfilEstudiante.java">Lab05PerfilEstudiante.java</a>.</p>
+<h3 id="pasos-para-completar-la-actividad_4">Pasos para completar la actividad</h3>
+<ol>
+<li>Abre <code>Lab05PerfilEstudiante.java</code> en tu proyecto personal.</li>
+<li><strong>TODO 1: Identificar los tipos de nombre, edad, ciudad, promedio y activo.</strong> Elige tipos explícitos para nombre, edad, ciudad, promedio y activo; usa la tabla de perfiles como datos.</li>
+<li><strong>TODO 2: Declarar e inicializar esos datos con nombres claros.</strong> Declara esas variables con los valores del perfil A.</li>
+<li><strong>TODO 3: Declarar final String CURSO con el valor "Java".</strong> Declara <code>final String CURSO</code> con el valor <code>"Java"</code> y no lo reasignes.</li>
+<li><strong>TODO 4: Mostrar la ficha inicial con etiquetas legibles.</strong> Imprime el encabezado y luego nombre, edad, ciudad, promedio, activo y curso con un println por línea. Concatena las etiquetas con las variables.</li>
+<li><strong>TODO 5: Reasignar ciudad para representar un cambio de residencia y mostrar "Ciudad actualizada: " con el nuevo valor, conservando el mismo tipo.</strong> Después de la ficha, reasigna ciudad a la ciudad nueva del perfil A sin volver a declarar String. Agrega un println con <code>Ciudad actualizada:</code> y ciudad.</li>
+<li><strong>TODO 6: Probar el perfil A del README; el perfil B es opcional.</strong> Ejecuta el perfil A y compara sus ocho líneas. El perfil B es una prueba opcional.</li>
+<li><strong>TODO 7: Colocar un breakpoint antes de la reasignación; observar ciudad, usar Step Over y registrar el valor anterior y el nuevo.</strong> Pon un breakpoint en la reasignación de ciudad y ejecuta Debug. Anota el valor antes de ejecutar esa línea y después de Step Over.</li>
+<li><strong>TODO 8: Explicar una elección de tipo y qué garantiza final en CURSO.</strong> En tu README personal escribe una frase justificando un tipo y otra explicando qué impide final. Guarda la salida del perfil A y los dos valores de ciudad.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>nombre</th>
+<th>edad</th>
+<th>ciudad</th>
+<th>promedio</th>
+<th>activo</th>
+<th>Ciudad nueva</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A · obligatorio</td>
+<td>Ana</td>
+<td>20</td>
+<td>Cucuta</td>
+<td>4.2</td>
+<td>true</td>
+<td>Bogota</td>
+</tr>
+<tr>
+<td>B · opcional</td>
+<td>Luis</td>
+<td>25</td>
+<td>Medellin</td>
+<td>3.8</td>
+<td>false</td>
+<td>Cali</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Salida del perfil A:</strong></p>
+<p><code>text
+=== Perfil del estudiante ===
+Nombre: Ana
+Edad: 20
+Ciudad: Cucuta
+Promedio: 4.2
+Activo: true
+Curso: Java
+Ciudad actualizada: Bogota</code></p>
+<h2 id="entrega">Entrega</h2>
+<p>Trae los cinco archivos Java completados para la siguiente clase y comparte el enlace de tu repositorio personal mediante Campus, según indique el docente. Incluye las pruebas mínimas y respuestas solicitadas; no se requieren capturas por prueba ni informes extensos. No subas archivos compilados ni configuración personal del IDE.</p>
+</body></html>
