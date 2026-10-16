@@ -42,6 +42,7 @@ public class Lab05PerfilEstudiante {
 
         // TODO 8: Explicación de elección de tipo y garantía de final.
         /*
+        explico en clase
         */
     }
 }
