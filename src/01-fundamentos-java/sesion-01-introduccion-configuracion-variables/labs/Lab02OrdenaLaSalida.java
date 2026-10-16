@@ -10,7 +10,7 @@ public class Lab02OrdenaLaSalida {
         // TODO 2: Ejecutar y explicar cualquier diferencia con tu predicción.
         System.out.print("A");
         System.out.println("B");
-        System.out.println("C")
+        System.out.println("C");
         /*
            - System.out.print("A") imprime "A" y mantiene el cursor en la misma línea.
            - System.out.println("B") imprime "B" al lado de la "A" (formando "AB") y luego hace un salto de línea.
