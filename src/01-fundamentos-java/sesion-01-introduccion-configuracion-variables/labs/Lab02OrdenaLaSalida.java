@@ -12,9 +12,9 @@ public class Lab02OrdenaLaSalida {
         System.out.println("B");
         System.out.println("C");
         /*
-           - System.out.print("A") imprime "A" y mantiene el cursor en la misma línea.
-           - System.out.println("B") imprime "B" al lado de la "A" (formando "AB") y luego hace un salto de línea.
-           - System.out.println("C") imprime "C" en la siguiente línea y hace un salto final.
+           System.out.print("A") imprime A y mantiene el cursor en la misma linea
+           System.out.println("B") imprime Bal lado de la "A"  y luego hace un salto de lnea
+           System.out.println("C") imprime C en la siguiente linea y hace un salto final
         */
 
         // TODO 3: Modificar las instrucciones anteriores para obtener: A - B - C
@@ -27,10 +27,7 @@ public class Lab02OrdenaLaSalida {
 
         // TODO 5: Explicar qué instrucción produce cada salto de línea.
         /*
-           - System.out.println("C"): Produce el primer salto de línea despus de imprimir la "C",
-             moviendo el cursor a la lnea inferior.
-           - System.out.println("Fin del laboratorio"): Produce el segundo salto de línea al terminar
-             de imprimir el texto final
+           System.out.println("C"): aqui tenemos el primer salto de lnea despus de imprimir la C
         */
     }
 }
