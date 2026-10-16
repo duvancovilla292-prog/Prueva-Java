@@ -37,18 +37,11 @@ public class Lab05PerfilEstudiante {
 
         // TODO 7: Registro del Breakpoint y Step Over (Debugging).
         /*
-           - Valor anterior de ciudad (antes de la reasignación): "Cúcuta"
-           - Acción: Aplicar "Step Over" sobre la línea de reasignación.
-           - Valor nuevo de ciudad (después de ejecutar la instrucción): "Medellín"
+
         */
 
         // TODO 8: Explicación de elección de tipo y garantía de final.
         /*
-           - Elección de tipo: Se utiliza `double` para el promedio porque permite almacenar
-             valores con precisión decimal (como 4.6), a diferencia de `int` que trunca los decimales.
-           - Garantía de `final`: La palabra reservada `final` en `CURSO` bloquea la variable
-             para que actúe como una constante inmutable, previniendo cualquier intento accidental
-             de modificar su valor a lo largo de la ejecución del programa.
         */
     }
 }
