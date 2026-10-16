@@ -1,11 +1,11 @@
 public class Lab03DatosConSentido {
     public static void main(String[] args) {
         // TODO 1: Elegir y justificar los tipos de datos:
-        // - nombre: String (almacena cadenas de texto o secuencias de caracteres).
-        // - edad: int (almacena números enteros, ideal para conteos de años).
-        // - temperatura: double (almacena números con decimales, ofreciendo mayor precisión).
-        // - inicial: char (almacena un único carácter delimitado por comillas simples '').
-        // - activo: boolean (almacena exclusivamente valores lógicos: true o false).
+        // - nombre: String (almacena cadenas de texto o cadenas de caracteres).
+        // - edad: int (almacena nmeros enteros).
+        // - temperatura: double (almacena numeros con decimalesdando precision).
+        // - inicial: char (almacena un caracter '').
+        // - activo: boolean (almacena exclusivamente  true o false).
 
         // TODO 2: Declarar e inicializar las cinco variables con nombres claros.
         String nombre = "Ciel Covilla";
@@ -21,12 +21,10 @@ public class Lab03DatosConSentido {
         System.out.println("Inicial: " + inicial);
         System.out.println("Activo: " + activo);
 
-        // TODO 4: Probar el caso A del README.
-        // (Caso A ejecutado: las variables imprimen sus valores con formato y etiquetas correctas).
+        // TODO 4: Probar el caso A del README
 
         // TODO 5: Explicar por qué String no es un tipo primitivo.
         /*
-           Explicación técnica:
            Los tipos primitivos en Java (int, double, char, boolean, etc.) son bloques de construcción
            básicos que almacenan su valor bruto directamente en memoria.
            Por el contrario, "String" es una clase (un tipo de referencia u objeto).
