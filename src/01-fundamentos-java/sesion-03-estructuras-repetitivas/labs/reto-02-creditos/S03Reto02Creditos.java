@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//reto ricardo, jesus, jimenes, alvaro, exneideer y Ciel
 public class S03Reto02Creditos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -49,56 +49,56 @@ public class S03Reto02Creditos {
                     edad = scanner.nextLong();
                 }
 
-                System.out.print("Ingresos mensuales (0 a 1000000000): ");
+                System.out.print("Ingresos mensuales (0 a 1.000.000.000): ");
                 while (!scanner.hasNextLong()) {
                     System.out.println("Error: debe ingresar un número entero.");
                     scanner.next();
-                    System.out.print("Ingresos mensuales (0 a 1000000000): ");
+                    System.out.print("Ingresos mensuales (0 a 1.000.000.000): ");
                 }
                 long ingresos = scanner.nextLong();
                 while (ingresos < 0 || ingresos > 1_000_000_000L) {
-                    System.out.println("Los ingresos deben estar entre 0 y 1000000000.");
-                    System.out.print("Ingresos mensuales (0 a 1000000000): ");
+                    System.out.println("Los ingresos deben estar entre 0 y 1.000.000.000.");
+                    System.out.print("Ingresos mensuales (0 a 1.000.000.000): ");
                     while (!scanner.hasNextLong()) {
                         System.out.println("Error: debe ingresar un número entero.");
                         scanner.next();
-                        System.out.print("Ingresos mensuales (0 a 1000000000): ");
+                        System.out.print("Ingresos mensuales (0 a 1.000.000.000): ");
                     }
                     ingresos = scanner.nextLong();
                 }
 
-                System.out.print("Gastos mensuales (0 a 1000000000): ");
+                System.out.print("Gastos mensuales (0 a 1.000.000.000): ");
                 while (!scanner.hasNextLong()) {
                     System.out.println("Error: debe ingresar un número entero.");
                     scanner.next();
-                    System.out.print("Gastos mensuales (0 a 1000000000): ");
+                    System.out.print("Gastos mensuales (0 a 1.000.000.000): ");
                 }
                 long gastos = scanner.nextLong();
                 while (gastos < 0 || gastos > 1_000_000_000L) {
-                    System.out.println("Los gastos deben estar entre 0 y 1000000000.");
-                    System.out.print("Gastos mensuales (0 a 1000000000): ");
+                    System.out.println("Los gastos deben estar entre 0 y 1.000.000.000.");
+                    System.out.print("Gastos mensuales (0 a 1.000.000.000): ");
                     while (!scanner.hasNextLong()) {
                         System.out.println("Error: debe ingresar un número entero.");
                         scanner.next();
-                        System.out.print("Gastos mensuales (0 a 1000000000): ");
+                        System.out.print("Gastos mensuales (0 a 1.000.000.000): ");
                     }
                     gastos = scanner.nextLong();
                 }
 
-                System.out.print("Crédito solicitado (1 a 1000000000): ");
+                System.out.print("Crédito solicitado (1 a 1.000.000.000): ");
                 while (!scanner.hasNextLong()) {
                     System.out.println("Error: debe ingresar un número entero.");
                     scanner.next();
-                    System.out.print("Crédito solicitado (1 a 1000000000): ");
+                    System.out.print("Crédito solicitado (1 a 1.000.000.000): ");
                 }
                 long credito = scanner.nextLong();
                 while (credito < 1 || credito > 1_000_000_000L) {
-                    System.out.println("El crédito debe estar entre 1 y 1000000000.");
-                    System.out.print("Crédito solicitado (1 a 1000000000): ");
+                    System.out.println("El crédito debe estar entre 1 y 1.000.000.000.");
+                    System.out.print("Crédito solicitado (1 a 1.000.000.000): ");
                     while (!scanner.hasNextLong()) {
                         System.out.println("Error: debe ingresar un número entero.");
                         scanner.next();
-                        System.out.print("Crédito solicitado (1 a 1000000000): ");
+                        System.out.print("Crédito solicitado (1 a 1.000.000.000): ");
                     }
                     credito = scanner.nextLong();
                 }
