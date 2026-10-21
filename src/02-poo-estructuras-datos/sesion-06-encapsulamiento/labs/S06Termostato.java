@@ -1,5 +1,5 @@
 public class S06Termostato {
-    // TODO 1: Declarar temperaturaObjetivo como campo privado int.
+    /*// TODO 1: Declarar temperaturaObjetivo como campo privado int.
 
     public S06Termostato() {
         // TODO 2: Inicializar la temperatura objetivo en 20.
@@ -13,5 +13,22 @@ public class S06Termostato {
     public boolean ajustarTemperatura(int nuevaTemperatura) {
         // TODO 4: Aceptar solo de 16 a 30 inclusive; cambiar si acepta y devolver el resultado.
         return false; // Retorno provisional: reemplazar.
+    }*/
+    private int temperaturaObjetivo;
+
+    public S06Termostato() {
+        temperaturaObjetivo = 20;
+    }
+
+    public int getTemperaturaObjetivo() {
+        return temperaturaObjetivo;
+    }
+
+    public boolean ajustarTemperatura(int nuevaTemperatura) {
+        if (nuevaTemperatura < 16 || nuevaTemperatura > 30) {
+            return false;
+        }
+        temperaturaObjetivo = nuevaTemperatura;
+        return true;
     }
 }

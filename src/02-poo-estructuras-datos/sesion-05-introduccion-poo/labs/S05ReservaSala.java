@@ -1,5 +1,5 @@
 public class S05ReservaSala {
-    // TODO 1: Declarar cliente (String), horas (int) y tarifaPorHora (long) privados.
+    /*// TODO 1: Declarar cliente (String), horas (int) y tarifaPorHora (long) privados.
 
     public S05ReservaSala(String cliente, int horas, long tarifaPorHora) {
         // TODO 2: Inicializar los tres campos con los parametros.
@@ -23,5 +23,34 @@ public class S05ReservaSala {
     public boolean extender(int horasAdicionales) {
         // TODO 6: Aceptar solo de 1 a 8 - horas; actualizar si acepta y devolver el resultado.
         return false; // Retorno provisional: reemplazar.
+    }*/
+    private String cliente;
+    private int horas;
+    private long tarifaPorHora;
+
+    public S05ReservaSala(String cliente, int horas, long tarifaPorHora) {
+        this.cliente = cliente;
+        this.horas = horas;
+        this.tarifaPorHora = tarifaPorHora;
+    }
+
+    public String obtenerCliente() {
+        return cliente;
+    }
+
+    public int obtenerHoras() {
+        return horas;
+    }
+
+    public long calcularCosto() {
+        return horas * tarifaPorHora;
+    }
+
+    public boolean extender(int horasAdicionales) {
+        if (horasAdicionales < 1 || horasAdicionales > 8 - horas) {
+            return false;
+        }
+        horas += horasAdicionales;
+        return true;
     }
 }
