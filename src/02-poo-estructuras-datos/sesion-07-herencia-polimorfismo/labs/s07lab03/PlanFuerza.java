@@ -5,8 +5,8 @@ public class PlanFuerza extends PlanEntrenamiento {
         super("Fuerza");
     }
 
-    // TODO 3: Agregar @Override y devolver 3 * 8 minutos.
+    @Override
     public int duracionMinutos() {
-        return 0; // Retorno provisional: reemplazar.
+        return 3 * 8;
     }
 }

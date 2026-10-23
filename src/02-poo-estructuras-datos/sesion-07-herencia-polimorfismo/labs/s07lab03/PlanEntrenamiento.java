@@ -1,7 +1,6 @@
 package s07lab03;
 
-// TODO 1: Declarar PlanEntrenamiento como clase abstracta.
-public class PlanEntrenamiento {
+public abstract class PlanEntrenamiento {
     private final String nombre;
 
     public PlanEntrenamiento(String nombre) {
@@ -12,5 +11,5 @@ public class PlanEntrenamiento {
         return nombre;
     }
 
-    // TODO 2: Declarar public abstract int duracionMinutos() sin cuerpo.
+    public abstract int duracionMinutos();
 }
