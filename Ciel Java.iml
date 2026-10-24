@@ -3,7 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/02-poo-estructuras-datos/sesion-07-herencia-polimorfismo/labs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/02-poo-estructuras-datos/sesion-08-arreglos-listas-genericos/labs/reto-01-feria-talleres" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
