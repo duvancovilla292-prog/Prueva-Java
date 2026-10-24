@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Registro de talleres. Programa contra List<T> con ArrayList: la cantidad es variable,
  * se agrega al final (orden de registro) y se recorre por posicion; no hay inserciones
- * ni borrados en el medio que justifiquen LinkedList.
+ * ni borrados en el medio que justifiquen LinkedList
  */
 public class GestorTalleres {
 
