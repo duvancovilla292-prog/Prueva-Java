@@ -124,3 +124,59 @@ Los demos acompañan la explicación conceptual; la siguiente hora es para los l
 En cada lab entrega dos comprobaciones cortas (entrada, esperado y obtenido) y una respuesta sobre participantes o costo del patrón. No tienes que escribir un patrón nuevo, desarrollar cinco UML completos ni completar TODO. Cambia solo los datos indicados y usa implementaciones ya preparadas. Completa lo pendiente en casa y entrega por Campus según indique el docente.
 
 Las fechas de los ejemplos son datos fijos reproducibles; no son fechas de entrega ni deben ser futuras. No se ejecutan transportes, notificaciones, pagos o impuestos reales.
+
+
+
+
+@startuml
+skinparam classAttributeIconSize 0
+
+' 1. Interfaz común
+interface EstadoTelefono {
+    + usarAplicaciones()
+    + bloquear()
+    + advertirBateria()
+}
+
+' 2. Clases concretas
+class DesbloqueadoState {
+    - telefono: Telefono
+    + usarAplicaciones()
+    + bloquear()
+    + advertirBateria()
+}
+
+class BloqueadoState {
+    - telefono: Telefono
+    + usarAplicaciones()
+    + bloquear()
+    + advertirBateria()
+}
+
+class BateriaBajaState {
+    - telefono: Telefono
+    + usarAplicaciones()
+    + bloquear()
+    + advertirBateria()
+}
+
+' 3. Contexto y delegación
+class Telefono {
+    - estadoActual: EstadoTelefono
+    + setEstado(nuevoEstado: EstadoTelefono)
+    + usarAplicaciones()
+    + bloquear()
+    + advertirBateria()
+}
+
+' Relaciones estructurales
+EstadoTelefono <|.. DesbloqueadoState
+EstadoTelefono <|.. BloqueadoState
+EstadoTelefono <|.. BateriaBajaState
+
+Telefono o--> EstadoTelefono : "estadoActual"
+DesbloqueadoState --> Telefono : "4. Transición activa"
+BloqueadoState --> Telefono : "4. Transición activa"
+BateriaBajaState --> Telefono : "4. Transición activa"
+
+@enduml
