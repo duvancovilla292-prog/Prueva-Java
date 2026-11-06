@@ -4,6 +4,7 @@ public final class PruebaReservas {
     private PruebaReservas() {
     }
 
+    // Crea participantes con los MISMOS cupos, los ejecuta en hilos y valida que las cuentas cuadren
     public static String ejecutar(Cupos cupos, int participantes, int intentos,
                                   boolean exigirCoherencia) throws InterruptedException {
         if (participantes < 1 || participantes > 16) {

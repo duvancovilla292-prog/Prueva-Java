@@ -7,6 +7,7 @@ public final class AgenteMensajes implements Runnable {
     private final AtomicInteger procesados;
     private final int mensajes;
 
+    // Recibe el contador compartido y cuantos mensajes procesara
     public AgenteMensajes(AtomicInteger procesados, int mensajes) {
         this.procesados = Objects.requireNonNull(procesados);
         if (mensajes < 1 || mensajes > 100_000) {
@@ -15,6 +16,7 @@ public final class AgenteMensajes implements Runnable {
         this.mensajes = mensajes;
     }
 
+    // Por cada mensaje suma 1 de forma atomica (sin perder incrementos entre hilos)
     @Override
     public void run() {
         for (int indice = 0; indice < mensajes; indice++) {

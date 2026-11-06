@@ -7,6 +7,7 @@ public final class Participante implements Runnable {
     private final int intentos;
     private int reservas;
 
+    // Recibe los cupos compartidos y cuantas veces intentara reservar
     public Participante(Cupos cupos, int intentos) {
         this.cupos = Objects.requireNonNull(cupos);
         if (intentos < 1 || intentos > 100_000) {
@@ -15,6 +16,7 @@ public final class Participante implements Runnable {
         this.intentos = intentos;
     }
 
+    // Lo que hace el hilo: intenta reservar N veces y cuenta sus exitos
     @Override
     public void run() {
         for (int intento = 0; intento < intentos; intento++) {
@@ -24,6 +26,7 @@ public final class Participante implements Runnable {
         }
     }
 
+    // Cuantas reservas logro este participante (se lee al final, tras esperar a todos)
     public int consultarReservas() {
         return reservas;
     }

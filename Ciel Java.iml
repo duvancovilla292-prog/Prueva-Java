@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/02-poo-estructuras-datos/sesion-10-set-map-enum-excepciones/labs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/01-fundamentos-java/sesion-03-estructuras-repetitivas/labs/reto-02-creditos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/04-concurrencia-java/sesion-15-introduccion-concurrencia/labs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/04-concurrencia-java/sesion-16-sincronizacion-atomicos/labs" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

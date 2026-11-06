@@ -4,9 +4,11 @@ import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 
 public final class EjecutorPrueba {
+    // Constructor privado: clase de utilidad, no se instancia
     private EjecutorPrueba() {
     }
 
+    // Lanza un hilo por tarea, los arranca a la vez con el latch y espera a que todos terminen (join)
     public static void ejecutar(Runnable[] tareas) throws InterruptedException {
         Objects.requireNonNull(tareas);
         if (tareas.length < 1 || tareas.length > 16) {
@@ -23,6 +25,7 @@ public final class EjecutorPrueba {
                 final int posicion = indice;
                 hilos[indice] = new Thread(new Runnable() {
                     @Override
+                    // Cada hilo espera la senal de inicio y luego corre su tarea
                     public void run() {
                         try {
                             inicio.await();

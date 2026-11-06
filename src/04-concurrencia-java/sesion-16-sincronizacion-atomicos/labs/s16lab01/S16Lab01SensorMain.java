@@ -1,8 +1,10 @@
 package s16lab01;
 
 public class S16Lab01SensorMain {
+    // Arranca el sensor, espera el primer lote, pide detenerlo y muestra el resumen
     public static void main(String[] args) throws InterruptedException {
-        final int TAMANO_LOTE = 64;
+//        final int TAMANO_LOTE = 64;
+        final int TAMANO_LOTE = 128; // Paso 4: lotes mas grandes -> muestras = lotes x 128
         SensorSimulado sensor = new SensorSimulado(TAMANO_LOTE);
         Thread hilo = new Thread(sensor, "sensor");
         try {
