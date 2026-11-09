@@ -8,7 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/01-fundamentos-java/sesion-03-estructuras-repetitivas/labs/reto-02-creditos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/04-concurrencia-java/sesion-15-introduccion-concurrencia/labs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/04-concurrencia-java/sesion-16-sincronizacion-atomicos/labs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/05-persistencia-datos/sesion-17-manejo-archivos/labs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/05-persistencia-datos/sesion-18-jdbc/labs/s18lab00/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/05-persistencia-datos/sesion-18-jdbc/labs/s18lab01/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
