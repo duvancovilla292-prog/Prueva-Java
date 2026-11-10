@@ -1,14 +1,12 @@
 package s18lab01;
 
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Scanner;
 
 // VISTA: solo consola (menú, entradas y mensajes). No usa java.sql ni SQL.
 public class VistaInventario {
     // Scanner lee lo que el usuario escribe en la consola.
-    // Ejemplo aquí: con UTF-8 se conservan tildes y la ñ.
-    private final Scanner teclado = new Scanner(System.in, StandardCharsets.UTF_8);
+    private final Scanner teclado = new Scanner(System.in);
 
     // Muestra el menú y devuelve la opción escrita
     public String mostrarMenu() {
@@ -25,17 +23,13 @@ public class VistaInventario {
         return teclado.nextLine();
     }
 
-    // Pregunta un entero; devuelve null si lo escrito no es un número entero
-    public Integer pedirEntero(String mensaje) {
+    // Pregunta un entero y lo devuelve
+    public int pedirEntero(String mensaje) {
         System.out.print(mensaje);
-        String texto = teclado.nextLine().strip();
-        try {
-            // Integer.parseInt convierte un texto a número entero y lanza NumberFormatException si no puede.
-            // Ejemplo aquí: "7" pasa a 7, pero "abc" cae en el catch y devuelve null.
-            return Integer.parseInt(texto);
-        } catch (NumberFormatException e) {
-            return null;
-        }
+        // Integer.parseInt convierte un texto a número entero (igual que en el demo01).
+        // Ejemplo aquí: "7" pasa a 7; si escribe "abc" lanza un error que el controlador
+        // atrapa en su catch de IllegalArgumentException.
+        return Integer.parseInt(teclado.nextLine().strip());
     }
 
     // Muestra la lista de productos como "id | nombre | stock"

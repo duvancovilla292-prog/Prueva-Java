@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="35c1db69-4429-47d4-9ef0-f23237f3024b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/s18demo00/demo00-1/src/s18demo00/S18Demo00UsuariosMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/s18demo00/demo00-1/src/s18demo00/S18Demo00UsuariosMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/s18demo01/src/main/java/s18demo01/ConexionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/s18demo01/src/main/java/s18demo01/ConexionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s18lab00/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../s18lab00/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../s18lab00/src/main/java/s18lab00/BibliotecaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../s18lab00/src/main/java/s18lab00/BibliotecaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s18lab01/ConexionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s18lab01/ConexionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s18lab01/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s18lab01/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s18lab01/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s18lab01/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s18lab01/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s18lab01/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/s18lab01/VistaInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s18lab01/VistaInventario.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "duvancovilla292-prog"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/duvancovilla292-prog/Prueva-Java.git",
+    "accountId": "d6d03e5a-592d-4c36-bf93-fb0410cc476b"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3LvgNVfGHO7wIrJTAPUzGw2GxMw" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/camper/Documentos/Ciel Java/src/05-persistencia-datos/sesion-18-jdbc/labs/s18lab01/pom.xml"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35c1db69-4429-47d4-9ef0-f23237f3024b" name="Changes" comment="" />
+      <created>1794339916330</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1794339916330</updated>
+    </task>
+    <servers />
+  </component>
+</project>

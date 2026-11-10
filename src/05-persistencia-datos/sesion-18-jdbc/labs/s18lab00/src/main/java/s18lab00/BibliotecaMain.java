@@ -1,35 +1,27 @@
 package s18lab00;
 
-import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Scanner;
 
 public class BibliotecaMain {
     private static final int MAX_TITULO = 150; // tamaño de la columna titulo
     private static final int MAX_ISBN = 20;    // tamaño de la columna isbn
 
-    // Abre una conexión nueva a MySQL leyendo los datos desde las variables de Run
+    // Datos de conexión guardados como constantes (igual que en los demos).
+    // static final: pertenecen a la clase y no se pueden cambiar después de asignarse.
+    private static final String URL = "jdbc:mysql://localhost:3306/campus_java_s18";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "Campus2023!";
+
+    // Abre una conexión nueva a MySQL usando las constantes de arriba
     static Connection conectar() throws SQLException {
-        // System.getenv("X") lee una variable de entorno del sistema o de la configuración Run.
-        // Ejemplo aquí: lee DB_URL (la dirección de la base), DB_USER y DB_PASSWORD (las credenciales).
-        String url = System.getenv("DB_URL");
-        String usuario = System.getenv("DB_USER");
-        String clave = System.getenv("DB_PASSWORD");
-
-        // == null pregunta si la variable no existe (no fue configurada).
-        // Ejemplo aquí: si falta alguna, avisamos con un error claro en vez de un NullPointerException.
-        if (url == null || usuario == null || clave == null) {
-            throw new SQLException("Faltan variables DB_URL, DB_USER o DB_PASSWORD en Run");
-        }
-
         // DriverManager.getConnection(...) abre la conexión con la base usando el driver (Connector/J).
         // Ejemplo aquí: devuelve la Connection que usaremos para todas las consultas del menú.
-        return DriverManager.getConnection(url, usuario, clave);
+        return DriverManager.getConnection(URL, DB_USER, DB_PASSWORD);
     }
 
     // Guarda un libro nuevo en la tabla libros
@@ -71,13 +63,10 @@ public class BibliotecaMain {
             // Ejemplo aquí: devuelve 1 si el libro se insertó.
             int filas = ps.executeUpdate();
             System.out.println("Filas insertadas: " + filas);
-        } catch (SQLIntegrityConstraintViolationException e) {
-            // Esta excepción salta cuando se rompe una regla como UNIQUE.
-            // Ejemplo aquí: el ISBN ya existe, se informa y el menú sigue funcionando.
-            System.out.println("Ese ISBN ya está registrado.");
         } catch (SQLException e) {
             // getMessage() devuelve el texto del error.
-            // Ejemplo aquí: muestra qué falló en la base, sin decir que salió bien.
+            // Ejemplo aquí: si el ISBN ya existe, UNIQUE rechaza el INSERT y se muestra el motivo;
+            // el menú sigue funcionando y no se anuncia éxito.
             System.out.println("Error al registrar: " + e.getMessage());
         }
     }
@@ -142,9 +131,8 @@ public class BibliotecaMain {
     }
 
     public static void main(String[] args) {
-        // new Scanner(System.in, ...) lee lo que el usuario escribe en la consola.
-        // Ejemplo aquí: con UTF-8 se conserva la ñ de "Cien años de soledad".
-        try (Scanner teclado = new Scanner(System.in, StandardCharsets.UTF_8);
+        // new Scanner(System.in) lee lo que el usuario escribe en la consola.
+        try (Scanner teclado = new Scanner(System.in);
              Connection con = conectar()) {
 
             // isValid(5) pregunta a la base si la conexión sigue viva, esperando máximo 5 segundos.
@@ -185,7 +173,7 @@ public class BibliotecaMain {
             }
             System.out.println("Hasta pronto.");
         } catch (SQLException e) {
-            // Aquí caen los fallos al conectar (credenciales, base apagada, variables faltantes).
+            // Aquí caen los fallos al conectar (credenciales incorrectas o base apagada).
             System.out.println("No se pudo conectar: " + e.getMessage());
         }
     }

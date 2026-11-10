@@ -8,12 +8,7 @@ public class Producto {
     private final String nombre;
     private final int stock;
 
-    // Producto nuevo (todavía sin id: MySQL lo asigna con AUTO_INCREMENT)
-    public Producto(String nombre, int stock) {
-        this(0, nombre, stock);
-    }
-
-    // Producto leído de la base (ya tiene id)
+    // Para un producto nuevo se pasa id 0 (MySQL lo asigna con AUTO_INCREMENT)
     public Producto(int id, String nombre, int stock) {
         // .isBlank() es true si el texto está vacío o solo tiene espacios (antes comprobamos que no sea null).
         // Ejemplo aquí: un nombre vacío o de puros espacios se rechaza con un mensaje claro.

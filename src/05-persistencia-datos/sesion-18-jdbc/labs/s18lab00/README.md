@@ -6,25 +6,7 @@ Debes crear tu propia aplicación Java de consola. **Esta carpeta contiene solo 
 
 ## Preparación SQL
 
-Con la base y el usuario de práctica de la [sesión](../../README.md#preparación-anterior-a-clase) ya preparados, ejecuta con la cuenta administrativa:
-
-```sql
-USE campus_java_s18;
-CREATE TABLE IF NOT EXISTS libros (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    titulo VARCHAR(150) NOT NULL,
-    isbn VARCHAR(20) NOT NULL UNIQUE
-);
-
--- Semilla opcional: permite consultar antes de registrar desde Java.
-INSERT INTO libros (titulo, isbn)
-SELECT 'Don Quijote de la Mancha', '9788420412146'
-WHERE NOT EXISTS (SELECT 1 FROM libros WHERE isbn = '9788420412146');
-
-SELECT id, titulo, isbn FROM libros ORDER BY id;
-```
-
-Puedes omitir el INSERT para empezar sin libros. Repetir esta carga local no duplica la semilla; no es una garantía frente a inserciones concurrentes. IF NOT EXISTS no corrige una tabla antigua: consulta SHOW CREATE TABLE libros si hay diferencias; no borres los datos.
+Abre [preparar.sql](preparar.sql) en MySQL Workbench y ejecútalo una sola vez. Crea la base `campus_java_s18` (si no existe), la tabla y un registro de ejemplo.
 
 ## Qué debes hacer
 

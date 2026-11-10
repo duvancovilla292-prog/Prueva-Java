@@ -114,7 +114,7 @@ Referencia: [ciclo de vida de Apache Maven](https://maven.apache.org/guides/intr
 
 ## Preparar tablas y datos
 
-Los README incluyen el SQL completo. Los demos tienen preparar.sql equivalente; los labs contienen solo README con su preparación SQL y el problema. Ejecuta sus bloques en el cliente MySQL, después de `USE campus_java_s18;`.
+Cada demo y cada lab tiene su propio `preparar.sql` en su carpeta: [demo00](demo/s18demo00/preparar.sql), [demo01](demo/s18demo01/preparar.sql), [lab00](labs/s18lab00/preparar.sql) y [lab01](labs/s18lab01/preparar.sql). Ábrelo en MySQL Workbench y ejecútalo.
 
 | Tabla | Se usa en | Semillas opcionales | Registro desde Java |
 | --- | --- | --- | --- |

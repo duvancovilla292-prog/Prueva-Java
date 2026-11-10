@@ -53,25 +53,17 @@ public class ProductoController {
 
     private void registrar() throws SQLException {
         String nombre = vista.pedirTexto("Nombre: ");
-        Integer stock = vista.pedirEntero("Stock: ");
-        // == null pregunta si no hay valor.
-        // Ejemplo aquí: si el usuario no escribió un entero, avisamos y no seguimos.
-        if (stock == null) {
-            throw new IllegalArgumentException("El stock debe ser un número entero.");
-        }
+        int stock = vista.pedirEntero("Stock: ");
         // new Producto(...) valida nombre y stock en su constructor; si algo falla lanza IllegalArgumentException.
-        // Ejemplo aquí: solo un Producto válido llega al DAO.
-        Producto producto = new Producto(nombre, stock);
+        // Ejemplo aquí: el id va en 0 porque MySQL lo asigna con AUTO_INCREMENT; solo un Producto válido llega al DAO.
+        Producto producto = new Producto(0, nombre, stock);
         int filas = dao.insertar(producto);
         vista.mostrarMensaje("Filas afectadas: " + filas);
     }
 
     private void cambiarStock() throws SQLException {
-        Integer id = vista.pedirEntero("Id del producto: ");
-        Integer stock = vista.pedirEntero("Nuevo stock: ");
-        if (id == null || stock == null) {
-            throw new IllegalArgumentException("El id y el stock deben ser números enteros.");
-        }
+        int id = vista.pedirEntero("Id del producto: ");
+        int stock = vista.pedirEntero("Nuevo stock: ");
         // Ejemplo aquí: id 0 o negativo se rechaza antes de tocar la base.
         if (id <= 0) {
             throw new IllegalArgumentException("El id debe ser positivo.");

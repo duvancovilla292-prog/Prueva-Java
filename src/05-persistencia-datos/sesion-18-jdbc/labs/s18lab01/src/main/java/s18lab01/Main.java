@@ -4,7 +4,6 @@ package s18lab01;
 public class Main {
     public static void main(String[] args) {
         // new X() crea un objeto de la clase X.
-        // Ejemplo aquí: la fábrica se le pasa al DAO, el DAO y la vista al controlador.
         ConexionFactory fabrica = new ConexionFactory();
         ProductoDAO dao = new ProductoDAO(fabrica);
         VistaInventario vista = new VistaInventario();

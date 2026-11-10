@@ -6,26 +6,7 @@
 
 ## Preparación SQL
 
-Con la base y el usuario de práctica de la [sesión](../../README.md#preparación-anterior-a-clase) ya preparados, ejecuta con la cuenta administrativa:
-
-```sql
-USE campus_java_s18;
-CREATE TABLE IF NOT EXISTS productos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL,
-    stock INT NOT NULL,
-    CONSTRAINT ck_productos_stock CHECK (stock >= 0)
-);
-
--- Semilla opcional para probar el listado.
-INSERT INTO productos (nombre, stock)
-SELECT 'Marcador', 15
-WHERE NOT EXISTS (SELECT 1 FROM productos WHERE nombre = 'Marcador');
-
-SELECT id, nombre, stock FROM productos ORDER BY id;
-```
-
-CHECK requiere MySQL 8.0.16 o posterior; valida también en Java. La semilla es opcional y diferente del producto que registrarás desde la aplicación. La comprobación por nombre sirve para repetir esta preparación local, no para controlar inserciones concurrentes. No borres tablas para reiniciar.
+Abre [preparar.sql](preparar.sql) en MySQL Workbench y ejecútalo una sola vez. Crea la base `campus_java_s18` (si no existe), la tabla y un registro de ejemplo.
 
 ## Qué debes hacer
 
