@@ -10,6 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/04-concurrencia-java/sesion-16-sincronizacion-atomicos/labs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/05-persistencia-datos/sesion-18-jdbc/labs/s18lab00/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/05-persistencia-datos/sesion-18-jdbc/labs/s18lab01/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/06-lambdas-stream-api/sesion-19-expresiones-lambda/demo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/06-lambdas-stream-api/sesion-19-expresiones-lambda/labs" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
