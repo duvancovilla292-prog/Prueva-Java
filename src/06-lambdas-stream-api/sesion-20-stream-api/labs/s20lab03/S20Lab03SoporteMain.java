@@ -6,23 +6,21 @@ import java.util.List;
 // Fuente: lista.stream() | Intermedia: mapToInt | Terminal: sum()
 public class S20Lab03SoporteMain {
     public static void main(String[] args) {
-        List<Integer> minutos1 = List.of(12, 8, 20);
+        List<Integer> minutos1 = List.of(12, 8, 20);// el List.of() crea una lista inmutable con los elementos que se le pasan como argumentos
         List<Integer> minutos2 = List.of(8, 8);
         List<Integer> minutos3 = List.of();
 
         System.out.println("Caso 1: " + total(minutos1)); // 40
-        System.out.println("Caso 2: " + total(minutos2)); // 16 (no se usa distinct, cada atención cuenta)
+        System.out.println("Caso 2: " + total(minutos2)); // 16 
         System.out.println("Caso 3: " + total(minutos3)); // 0
 
-        // sum() es la operación terminal que produce el número final.
-        // Si no hay datos, sum() devuelve 0, así que no hace falta un if.
-        // No se usa una variable externa ni forEach: el total sale del propio stream.
+       
     }
 
     // Suma todos los minutos
     public static int total(List<Integer> minutos) {
-        return minutos.stream()
-                .mapToInt(Integer::intValue) // Integer -> int (IntStream), equivale a m -> m
-                .sum();                      // suma todo; vacío = 0
+        return minutos.stream()//el .stream() crea un Stream<Integer> a partir de la lista
+                .mapToInt(Integer::intValue) // convierte cada Integer en un int (un IntStream)
+                .sum(); // el sum() suma todos los int del IntStream y devuelve el total                     
     }
 }
