@@ -3,7 +3,7 @@ package s20lab03;
 import java.util.List;
 
 // Lab03: total de minutos -> mapToInt + sum
-// Fuente: lista.stream() | Intermedia: mapToInt | Terminal: sum()
+// Fuente: lista.stream() | Predicado Lambda: mapToInt | Terminal: sum()
 public class S20Lab03SoporteMain {
     public static void main(String[] args) {
         List<Integer> minutos1 = List.of(12, 8, 20);// el List.of() crea una lista inmutable con los elementos que se le pasan como argumentos
